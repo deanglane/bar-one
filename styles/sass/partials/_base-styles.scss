@@ -1,0 +1,42 @@
+/* ====base styles===== */
+@import 'variables';
+
+
+html {
+    // font-family: xx; // <-- add in font family here
+    font-size: 125%; // <-- Changes the default font size to 20px
+    color: $black;
+}
+    
+.wrapper {
+    max-width: 1280px;
+    width: 85%;
+    margin: 0 auto;
+}
+    
+section {
+    margin: 100px 0; // adds a default 100px margin at the top and bottom of each section.
+}
+    
+html,
+ul,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    
+a {
+    color: inherit;
+    text-decoration: none;
+}
+    
+img {
+    max-width: 100%; // Makes all images become responsive if the parent container wants to shrink */
+    display: block; // removes extra padding at bottom of images */
+    height: auto;
+}

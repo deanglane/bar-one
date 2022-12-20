@@ -1,0 +1,18 @@
+/* ====Navigation===== */
+@import 'variables';
+
+.skipLink {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: $off-white;
+    color: $black;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+    width: 100%; // gives the container its size and centers on screen
+    left: -100%; // removes the container 100% off the screen to the left
+    &:focus {
+        left: 0;
+    }
+}
