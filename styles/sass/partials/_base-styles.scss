@@ -1,16 +1,19 @@
 /* ====base styles===== */
 @import 'variables';
 
+// css font styles
+// font-family: 'Chathura', sans-serif;
+// font-family: 'Tulpen One', cursive;
 
 html {
-    // font-family: xx; // <-- add in font family here
+    font-family: xx; 
     font-size: 125%; // <-- Changes the default font size to 20px
     color: $black;
 }
     
 .wrapper {
     max-width: 1280px;
-    width: 85%;
+    width: 90%;
     margin: 0 auto;
 }
     
@@ -38,5 +41,5 @@ a {
 img {
     max-width: 100%; // Makes all images become responsive if the parent container wants to shrink */
     display: block; // removes extra padding at bottom of images */
-    height: auto;
+    height: auto; 
 }
