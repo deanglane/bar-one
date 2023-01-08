@@ -1,24 +1,9 @@
 /* ====base styles===== */
-@import 'variables';
 
-// css font styles
-// font-family: 'Chathura', sans-serif;
-// font-family: 'Tulpen One', cursive;
-
-html {
-    font-family: xx; 
-    font-size: 125%; // <-- Changes the default font size to 20px
-    color: $black;
-}
-    
 .wrapper {
     max-width: 1280px;
     width: 90%;
     margin: 0 auto;
-}
-    
-section {
-    margin: 100px 0; // adds a default 100px margin at the top and bottom of each section.
 }
     
 html,
@@ -30,16 +15,38 @@ p,
 ul {
     margin: 0;
     padding: 0;
+}
+
+ul {
     list-style: none;
 }
-    
+
 a {
-    color: inherit;
     text-decoration: none;
 }
-    
+
 img {
     max-width: 100%; // Makes all images become responsive if the parent container wants to shrink */
     display: block; // removes extra padding at bottom of images */
-    height: auto; 
+    height: auto;
+}
+
+.aButton {
+    font-family: 'Tulpen One', cursive;
+    font-size: 1rem;
+    color: $off-white;
+    background: $rust-red;
+    padding: 0.12em 1em;
+    line-height: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        background-color: $dusty-orange;
+        color: $black;
+    }
+    &:focus {
+        background-color: $dusty-orange;
+        color: $black;
+    }
 }
