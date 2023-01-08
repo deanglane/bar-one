@@ -1,12 +1,13 @@
 /* ====Variables===== */ /* ====base styles===== */ /* ====Variables===== */
 html {
+  font-family: xx;
   font-size: 125%;
   color: #111010;
 }
 
 .wrapper {
   max-width: 1280px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -37,6 +38,69 @@ img {
   height: auto;
 }
 
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.095rem;
+  color: #111010;
+}
+
+h2, h3 {
+  color: #111010;
+}
+
+h1 {
+  font-family: "Tulpen One", cursive;
+  font-size: 13.07rem;
+  letter-spacing: 0.12rem;
+}
+
+h2 {
+  font-size: 4.16rem;
+  font-weight: 700;
+  line-height: 4.735rem;
+  letter-spacing: 0.13rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 0.11rem;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.navigation a {
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 1.45rem;
+  letter-spacing: 0.095rem;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.navigation h2 {
+  font-family: "Tulpen One", cursive;
+  font-size: 2rem;
+}
+
+.skip-link {
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
 /* ====Navigation===== */ /* ====Variables===== */
 .skipLink {
   font-size: 1rem;
@@ -52,4 +116,52 @@ img {
 }
 .skipLink:focus {
   left: 0;
+}
+
+/* ====Blog section SCSS===== */
+.wrapper {
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 80px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 80px;
+     -moz-column-gap: 80px;
+          column-gap: 80px;
+}
+.row > div {
+  width: 50%;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  position: absolute;
+  width: 50vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -10px 10px 0px 2px #000000;
+          box-shadow: -10px 10px 0px 2px #000000;
+  margin-bottom: 40px;
+}
+
+.row:nth-of-type(2) .image {
+  right: 0;
+  -webkit-box-shadow: 10px -10px 0px 2px #000000;
+          box-shadow: 10px -10px 0px 2px #000000;
 }
