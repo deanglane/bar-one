@@ -18,7 +18,7 @@ h2, h3 {
 h1 {
     font-family: 'Tulpen One', cursive;
     font-size: 13.07rem; // 261.4px
-    letter-spacing: 0.12rem; //2.4px
+    // letter-spacing: 0.12rem; //2.4px
 }
 
 h2 {
@@ -45,7 +45,7 @@ h3 {
         font-weight: 700;
         line-height: 1.45rem; // 29px
         letter-spacing: 0.095rem; // 1.9px
-        color: inherit;
+        color: $off-white;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -53,11 +53,13 @@ h3 {
     // logo inside navigation
     h2 {
         font-family: 'Tulpen One', cursive;
-        font-size: 2rem;
+        color: $off-white;
+        font-size: 2.5rem;
+        line-height: 1.5rem;
     }
 }
 
-.skip-link {
-    font-size: 1.9rem;
-    font-weight: 700;
-}
+// .skip-link {
+//     font-size: 1.9rem;
+//     font-weight: 700;
+// }

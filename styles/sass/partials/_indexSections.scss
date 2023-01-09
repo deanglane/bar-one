@@ -1,0 +1,53 @@
+/* ====Index Sections SCSS===== */
+
+/* ====header===== */
+header {
+    background-image: url('../../../assets/home-image-1.jpg');
+    background-size: cover;
+    height: 75vh;
+    h1 {
+        padding-top: 100px;
+
+    }
+}
+
+
+
+/* ====blog section===== */
+// .wrapper {
+//     max-width: 1000px;
+//     width: 90%;
+//     margin: 0 auto;
+//     display: flex;
+//     flex-direction: column;
+//     row-gap: 80px;
+// }
+
+// .row {
+//     display: flex;
+//     column-gap: 80px;
+
+//     > div {
+//         width: 50%;
+//     }
+// }
+
+// .imageContainer {
+//     position: relative;
+// }
+
+// .image {
+//     position: absolute;
+//     width: calc(100vw / 2);
+//     height: 100%;
+//     object-fit: cover;
+//     box-shadow: -10px 10px 0px 2px #4d2c2c;
+//     margin-bottom: 40px;
+// }
+
+// .row:nth-of-type(2) {
+//     .image {
+//         right: 0;
+//         box-shadow: 10px -10px 0px 2px #000000;
+//     }
+// }
