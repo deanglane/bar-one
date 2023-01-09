@@ -34,19 +34,19 @@ img {
 .aButton {
     font-family: 'Tulpen One', cursive;
     font-size: 1rem;
-    color: $off-white;
-    background: $rust-red;
+    color: $offWhite;
+    background: $rustRed;
     padding: 0.12em 1em;
     line-height: 1.2rem;
     text-align: center;
     cursor: pointer;
     transition: 0.3s;
     &:hover {
-        background-color: $dusty-orange;
+        background-color: $dustyOrange;
         color: $black;
     }
     &:focus {
-        background-color: $dusty-orange;
+        background-color: $dustyOrange;
         color: $black;
     }
 }

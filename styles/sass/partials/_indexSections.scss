@@ -4,13 +4,22 @@
 header {
     background-image: url('../../../assets/home-image-1.jpg');
     background-size: cover;
-    height: 75vh;
-    h1 {
-        padding-top: 100px;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .logoContainer {
+        position: relative;
+        top: 14%;
     }
 }
 
+
+
+.floatingImage img {
+    width: 300px;
+}
 
 
 /* ====blog section===== */

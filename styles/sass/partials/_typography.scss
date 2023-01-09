@@ -4,30 +4,30 @@ html {
 
 body {
     font-family: 'Chathura', sans-serif;
-    font-size: 1.95rem; // 39px
-    line-height: 1.5rem; //30px
-    letter-spacing: 0.095rem; //1.9px
-    color: $black; 
+    color: $offWhite; 
 }
 
 
 h2, h3 {
-    color: $black;
+    color: $offWhite;
 }
 
 h1 {
     font-family: 'Tulpen One', cursive;
     font-size: 13.07rem; // 261.4px
-    // letter-spacing: 0.12rem; //2.4px
+    letter-spacing: 2.4px;
+    line-height: 9.2rem;
+    color: $dustyOrange;
 }
 
 h2 {
     font-size: 4.16rem; //83.2px
     font-weight: 700;
-    line-height: 4.735rem; //94.7px
-    letter-spacing: 0.13rem; //2.6px
+    line-height: 2rem;
+    letter-spacing: 2.6px;
     margin-bottom: 0;
 }
+
 
 h3 {
     font-size: 3.4rem; //68px
@@ -45,7 +45,7 @@ h3 {
         font-weight: 700;
         line-height: 1.45rem; // 29px
         letter-spacing: 0.095rem; // 1.9px
-        color: $off-white;
+        color: $offWhite;
         cursor: pointer;
         transition: 0.3s;
     }
@@ -53,9 +53,8 @@ h3 {
     // logo inside navigation
     h2 {
         font-family: 'Tulpen One', cursive;
-        color: $off-white;
+        color: $offWhite;
         font-size: 2.5rem;
-        line-height: 1.5rem;
     }
 }
 
