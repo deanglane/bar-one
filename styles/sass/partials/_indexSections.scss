@@ -5,21 +5,28 @@ header {
     background-image: url('../../../assets/home-image-1.jpg');
     background-size: cover;
     height: 65vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 
     .logoContainer {
-        position: relative;
-        top: 14%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
     }
+
+    img {
+        width: 50%;
+        min-height: 370px;
+        position: absolute;
+        bottom: -20%;
+        right: 0;
+        object-fit: cover;
+    }    
 }
 
 
 
-.floatingImage img {
-    width: 300px;
-}
 
 
 /* ====blog section===== */
