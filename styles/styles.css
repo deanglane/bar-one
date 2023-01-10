@@ -229,6 +229,10 @@ template {
   margin: 0 auto;
 }
 
+body {
+  background-color: #111010;
+}
+
 html,
 ul,
 h1,
@@ -246,6 +250,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: #FFFFFF;
 }
 
 img {
@@ -282,6 +287,9 @@ html {
 body {
   font-family: "Chathura", sans-serif;
   color: #FFFFFF;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.11rem;
 }
 
 h2, h3 {
@@ -360,7 +368,7 @@ h3 {
 header {
   background-image: url("../../../assets/home-image-1.jpg");
   background-size: cover;
-  height: 65vh;
+  height: 75vh;
   position: relative;
 }
 header .logoContainer {
@@ -379,6 +387,82 @@ header img {
   right: 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* ====information===== */
+.information {
+  padding-top: 180px;
+}
+.information ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.information ul li {
+  width: 50%;
+  padding: 50px;
+  position: relative;
+}
+.information ul li .newSpace::before {
+  content: "\e3af";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #BF2603;
+  position: absolute;
+  left: -3%;
+}
+.information ul li .community::before {
+  content: "\f0c0";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #BF2603;
+  position: absolute;
+  left: -3%;
+}
+.information ul li .blog::before {
+  content: "\f15b";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #BF2603;
+  position: absolute;
+  left: -3%;
+}
+.information ul li .getInTouch::before {
+  content: "\f879";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #BF2603;
+  position: absolute;
+  left: -3%;
 }
 
 /* ====blog section===== */

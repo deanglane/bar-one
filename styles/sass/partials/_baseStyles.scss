@@ -6,6 +6,10 @@
     margin: 0 auto;
 }
     
+body {
+    background-color: $black;
+}
+
 html,
 ul,
 h1,
@@ -23,6 +27,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: $offWhite;
 }
 
 img {

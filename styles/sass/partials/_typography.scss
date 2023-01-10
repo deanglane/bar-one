@@ -4,9 +4,11 @@ html {
 
 body {
     font-family: 'Chathura', sans-serif;
-    color: $offWhite; 
+    color: $offWhite;
+    font-size: 1.95rem; // 39px
+    line-height: 1.5rem; // 30px
+    letter-spacing: 0.11rem; // 2.2px
 }
-
 
 h2, h3 {
     color: $offWhite;
@@ -36,6 +38,7 @@ h3 {
     letter-spacing: 0.11rem; // 2.2px
     margin-bottom: 0;
 }
+
 
 .navigation {
 
