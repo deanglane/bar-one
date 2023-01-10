@@ -40,56 +40,13 @@ header {
             padding: 50px;
             position: relative;
 
-            .newSpace::before {
-                content: "\e3af";
-                font-family: "Font Awesome 6 Free";
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 50px;
-                text-align: center;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: $rustRed;
-                position: absolute;
-                left: -3%;
-            }
-
-            .community::before {
-                content: "\f0c0";
-                font-family: "Font Awesome 6 Free";
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 50px;
-                text-align: center;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: $rustRed;
-                position: absolute;
-                left: -3%;
-            }
-
-            .blog::before {
-                content: "\f15b";
-                font-family: "Font Awesome 6 Free";
-                font-weight: 700;
-                font-size: 28px;
-                line-height: 50px;
-                text-align: center;
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                background-color: $rustRed;
-                position: absolute;
-                left: -3%;
-            }
-
+            .newSpace::before,
+            .community::before,
+            .blogImg::before,
             .getInTouch::before {
-                content: "\f879";
                 font-family: "Font Awesome 6 Free";
-                font-weight: 700;
-                font-size: 28px;
+                font-weight: 600;
+                font-size: 30px;
                 line-height: 50px;
                 text-align: center;
                 width: 50px;
@@ -99,46 +56,61 @@ header {
                 position: absolute;
                 left: -3%;
             }
+            
+            .newSpace::before {content: "\e3af";}
+            .community::before {content: "\f0c0";}
+            .blogImg::before {content: "\f15b";}
+            .getInTouch::before {content: "\f879";}
         }
     }
 }
 
 
 /* ====blog section===== */
-// .wrapper {
-//     max-width: 1000px;
-//     width: 90%;
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: column;
-//     row-gap: 80px;
-// }
+.blog {
+    background-color: $darkRed;
+}
 
-// .row {
-//     display: flex;
-//     column-gap: 80px;
+.blog .wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
 
-//     > div {
-//         width: 50%;
-//     }
-// }
+.row {
+    display: flex;
+    column-gap: 120px;
+}
+    
+.row > div {
+    width: 50%;
+}
 
-// .imageContainer {
-//     position: relative;
-// }
+.imageContainer {
+    position: relative;
+    height: 35vh;
+}
 
-// .image {
-//     position: absolute;
-//     width: calc(100vw / 2);
-//     height: 100%;
-//     object-fit: cover;
-//     box-shadow: -10px 10px 0px 2px #4d2c2c;
-//     margin-bottom: 40px;
-// }
+.image {
+    position: absolute;
+    width: calc(100vw / 2);
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -15px 15px 0px 0px #FF8327;
+    /* margin-bottom: 40px; */
+}
 
-// .row:nth-of-type(2) {
-//     .image {
-//         right: 0;
-//         box-shadow: 10px -10px 0px 2px #000000;
-//     }
-// }
+.image1 {
+    right: 0;
+    box-shadow: 15px 15px 0px 0px #FF8327;
+    // top: -20%;
+    }
+
+.image2 {
+    // bottom: -20%;
+}
+
+p {
+    margin:0;
+}
+

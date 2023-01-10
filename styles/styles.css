@@ -225,7 +225,7 @@ template {
 /* ====Variables===== */ /* ====base styles===== */
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 
@@ -408,11 +408,13 @@ header img {
   padding: 50px;
   position: relative;
 }
-.information ul li .newSpace::before {
-  content: "\e3af";
+.information ul li .newSpace::before,
+.information ul li .community::before,
+.information ul li .blogImg::before,
+.information ul li .getInTouch::before {
   font-family: "Font Awesome 6 Free";
-  font-weight: 700;
-  font-size: 28px;
+  font-weight: 600;
+  font-size: 30px;
   line-height: 50px;
   text-align: center;
   width: 50px;
@@ -421,48 +423,71 @@ header img {
   background-color: #BF2603;
   position: absolute;
   left: -3%;
+}
+.information ul li .newSpace::before {
+  content: "\e3af";
 }
 .information ul li .community::before {
   content: "\f0c0";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #BF2603;
-  position: absolute;
-  left: -3%;
 }
-.information ul li .blog::before {
+.information ul li .blogImg::before {
   content: "\f15b";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #BF2603;
-  position: absolute;
-  left: -3%;
 }
 .information ul li .getInTouch::before {
   content: "\f879";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: #BF2603;
-  position: absolute;
-  left: -3%;
 }
 
 /* ====blog section===== */
+.blog {
+  background-color: #220303;
+}
+
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 80px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 120px;
+     -moz-column-gap: 120px;
+          column-gap: 120px;
+}
+
+.row > div {
+  width: 50%;
+}
+
+.imageContainer {
+  position: relative;
+  height: 35vh;
+}
+
+.image {
+  position: absolute;
+  width: 50vw;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: -15px 15px 0px 0px #FF8327;
+          box-shadow: -15px 15px 0px 0px #FF8327;
+  /* margin-bottom: 40px; */
+}
+
+.image1 {
+  right: 0;
+  -webkit-box-shadow: 15px 15px 0px 0px #FF8327;
+          box-shadow: 15px 15px 0px 0px #FF8327;
+}
+
+p {
+  margin: 0;
+}
