@@ -442,7 +442,6 @@ header img {
   background-color: #220303;
   margin-top: 80px;
 }
-
 .blog .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -451,57 +450,66 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 50px;
 }
-
-.row {
+.blog .wrapper .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 150px;
-     -moz-column-gap: 150px;
-          column-gap: 150px;
+  -webkit-column-gap: 200px;
+     -moz-column-gap: 200px;
+          column-gap: 200px;
 }
-
-.row > div {
+.blog .wrapper .row:nth-of-type(1) .textContainer {
+  padding-top: 85px;
+}
+.blog .wrapper .row:nth-of-type(2) h2 {
+  text-align: right;
+  padding-top: 85px;
+}
+.blog .wrapper .row div {
   width: 50%;
 }
-
-.imageContainer {
+.blog .wrapper .row .imageContainer {
   position: relative;
   height: 45vh;
 }
-
-.image {
+.blog .wrapper .row .imageContainer .image {
   position: absolute;
   width: 50vw;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-box-shadow: -15px 15px 0px 0px #FF8327;
-          box-shadow: -15px 15px 0px 0px #FF8327;
+  -webkit-box-shadow: -20px 20px 0px 0px #FF8327;
+          box-shadow: -20px 20px 0px 0px #FF8327;
   /* margin-bottom: 40px; */
 }
-
-.image1 {
+.blog .wrapper .row .imageContainer .image1 {
   right: 0;
-  -webkit-box-shadow: 15px 15px 0px 0px #FF8327;
-          box-shadow: 15px 15px 0px 0px #FF8327;
-  top: -15%;
+  -webkit-box-shadow: 20px 20px 0px -5px #FF8327;
+          box-shadow: 20px 20px 0px -5px #FF8327;
+  top: -6%;
 }
-
-.image2 {
+.blog .wrapper .row .imageContainer .image2 {
   bottom: -10%;
 }
-
-p {
-  margin: 0;
+.blog .wrapper .row .textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-
-.row:nth-of-type(1) .textContainer {
-  padding-top: 100px;
+.blog .wrapper .row .textContainer h2 {
+  margin-bottom: 15px;
 }
-
-.row:nth-of-type(2) h2 {
-  text-align: right;
+.blog .wrapper .row .textContainer .aButton {
+  margin-top: 30px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.blog .wrapper .row .textContainer:nth-of-type(1) .aButton {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }

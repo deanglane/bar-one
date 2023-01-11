@@ -70,61 +70,70 @@ header {
 .blog {
     background-color: $darkRed;
     margin-top: 80px;
-}
 
-.blog .wrapper {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        
+        .row {
+            display: flex;
+            column-gap: 200px;
 
-.row {
-    display: flex;
-    column-gap: 150px;
-}
+            &:nth-of-type(1) .textContainer {
+                padding-top: 85px;
+            }
 
-.row > div {
-    width: 50%;
-}
+            &:nth-of-type(2) h2 {
+                text-align: right;
+                padding-top: 85px;
+            }
 
+            div {
+                width: 50%;
+            }
 
-.imageContainer {
-    position: relative;
-    height: 45vh;
-}
+            .imageContainer {
+                position: relative;
+                height: 45vh;
 
-.image {
-    position: absolute;
-    width: calc(100vw / 2);
-    height: 100%;
-    object-fit: cover;
-    box-shadow: -15px 15px 0px 0px #FF8327;
-    /* margin-bottom: 40px; */
-}
+                .image {
+                    position: absolute;
+                    width: calc(100vw / 2);
+                    height: 100%;
+                    object-fit: cover;
+                    box-shadow: -20px 20px 0px -0px #FF8327;
+                    /* margin-bottom: 40px; */
+                }
 
-.image1 {
-    right: 0;
-    box-shadow: 15px 15px 0px 0px #FF8327;
-    top: -15%;
-    }
+                .image1 {
+                    right: 0;
+                    box-shadow: 20px 20px 0px -5px #FF8327;
+                    top: -6%;
+                }
 
-.image2 {
-    bottom: -10%;
-}
+                .image2 {
+                    bottom: -10%;
+                }
+            }
 
-p {
-    margin:0;
-}
+            .textContainer {
+                display: flex;
+                flex-direction: column;
 
-.row:nth-of-type(1) {
-    .textContainer {
-        padding-top: 100px;
-    }
-}
+                h2 {
+                    margin-bottom: 15px;
+                }
 
-.row:nth-of-type(2) {
-    h2 {
-        text-align: right;
+                .aButton {
+                    margin-top: 30px;
+                    align-self: flex-start;
+                }
+
+                &:nth-of-type(1) .aButton {
+                    align-self: flex-end;
+                }
+            }
+        }
     }
 }
 
