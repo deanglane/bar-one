@@ -31,19 +31,20 @@ a {
 }
 
 img {
-    max-width: 100%; // Makes all images become responsive if the parent container wants to shrink */
+    // max-width: 100%; // Makes all images become responsive if the parent container wants to shrink */
     display: block; // removes extra padding at bottom of images */
     height: auto;
 }
 
 .aButton {
     font-family: 'Tulpen One', cursive;
-    font-size: 1rem;
+    font-size: 1.8rem;
     color: $offWhite;
     background: $rustRed;
-    padding: 0.12em 1em;
+    padding: 0.4em 0.9em;
     line-height: 1.2rem;
     text-align: center;
+    display: inline-block;
     cursor: pointer;
     transition: 0.3s;
     &:hover {

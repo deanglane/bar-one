@@ -254,19 +254,19 @@ a {
 }
 
 img {
-  max-width: 100%;
   display: block;
   height: auto;
 }
 
 .aButton {
   font-family: "Tulpen One", cursive;
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #FFFFFF;
   background: #BF2603;
-  padding: 0.12em 1em;
+  padding: 0.4em 0.9em;
   line-height: 1.2rem;
   text-align: center;
+  display: inline-block;
   cursor: pointer;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -440,6 +440,7 @@ header img {
 /* ====blog section===== */
 .blog {
   background-color: #220303;
+  margin-top: 80px;
 }
 
 .blog .wrapper {
@@ -450,16 +451,16 @@ header img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  row-gap: 80px;
+  row-gap: 50px;
 }
 
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 120px;
-     -moz-column-gap: 120px;
-          column-gap: 120px;
+  -webkit-column-gap: 150px;
+     -moz-column-gap: 150px;
+          column-gap: 150px;
 }
 
 .row > div {
@@ -468,7 +469,7 @@ header img {
 
 .imageContainer {
   position: relative;
-  height: 35vh;
+  height: 45vh;
 }
 
 .image {
@@ -486,8 +487,21 @@ header img {
   right: 0;
   -webkit-box-shadow: 15px 15px 0px 0px #FF8327;
           box-shadow: 15px 15px 0px 0px #FF8327;
+  top: -15%;
+}
+
+.image2 {
+  bottom: -10%;
 }
 
 p {
   margin: 0;
+}
+
+.row:nth-of-type(1) .textContainer {
+  padding-top: 100px;
+}
+
+.row:nth-of-type(2) h2 {
+  text-align: right;
 }
