@@ -261,6 +261,7 @@ img {
 .aButton {
   font-family: "Tulpen One", cursive;
   font-size: 1.8rem;
+  text-transform: capitalize;
   color: #FFFFFF;
   background: #BF2603;
   padding: 0.4em 0.9em;
@@ -389,7 +390,7 @@ header img {
      object-fit: cover;
 }
 
-/* ====information===== */
+/* ====information section===== */
 .information {
   padding-top: 180px;
 }
@@ -481,7 +482,6 @@ header img {
      object-fit: cover;
   -webkit-box-shadow: -20px 20px 0px 0px #FF8327;
           box-shadow: -20px 20px 0px 0px #FF8327;
-  /* margin-bottom: 40px; */
 }
 .blog .wrapper .row .imageContainer .image1 {
   right: 0;
@@ -512,4 +512,42 @@ header img {
 .blog .wrapper .row .textContainer:nth-of-type(1) .aButton {
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+/* ====get in touch section===== */
+.getInTouchTextBox {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.getInTouchTextBox h3 {
+  color: #FF8327;
+  text-align: center;
+  padding-bottom: 1.2rem;
+}
+.getInTouchTextBox p {
+  text-align: center;
+}
+.getInTouchTextBox .aButton {
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-top: 1.5rem;
+}
+
+.imageBreak {
+  width: 100vw;
+}
+.imageBreak img {
+  width: 100%;
+  min-height: 40vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: right;
+     object-position: right;
 }

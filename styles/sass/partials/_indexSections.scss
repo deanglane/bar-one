@@ -25,7 +25,7 @@ header {
     }    
 }
 
-/* ====information===== */
+/* ====information section===== */
 
 .information {
     padding-top: 180px;
@@ -40,6 +40,7 @@ header {
             padding: 50px;
             position: relative;
 
+            // font awesome pseudo element base style  
             .newSpace::before,
             .community::before,
             .blogImg::before,
@@ -57,6 +58,7 @@ header {
                 left: -3%;
             }
             
+            // font awesome individual images
             .newSpace::before {content: "\e3af";}
             .community::before {content: "\f0c0";}
             .blogImg::before {content: "\f15b";}
@@ -71,51 +73,60 @@ header {
     background-color: $darkRed;
     margin-top: 80px;
 
+    // wrapper flex
     .wrapper {
         display: flex;
         flex-direction: column;
         
+        // row styling
         .row {
             display: flex;
             column-gap: 200px;
 
+            // first text container only (top row)
             &:nth-of-type(1) .textContainer {
                 padding-top: 85px;
             }
 
+            // second h2 header only (bottom row)
             &:nth-of-type(2) h2 {
                 text-align: right;
                 padding-top: 85px;
             }
 
+            // all div's inside row
             div {
                 width: 50%;
             }
 
+            // images
             .imageContainer {
                 position: relative;
                 height: 45vh;
 
+                // base style for both images
                 .image {
                     position: absolute;
                     width: calc(100vw / 2);
                     height: 100%;
                     object-fit: cover;
                     box-shadow: -20px 20px 0px -0px #FF8327;
-                    /* margin-bottom: 40px; */
                 }
 
+                // top row image
                 .image1 {
                     right: 0;
                     box-shadow: 20px 20px 0px -5px #FF8327;
                     top: -6%;
                 }
 
+                // bottom row image
                 .image2 {
                     bottom: -10%;
                 }
             }
 
+            // paragraph text content
             .textContainer {
                 display: flex;
                 flex-direction: column;
@@ -129,6 +140,7 @@ header {
                     align-self: flex-start;
                 }
 
+                // first button only (top row)
                 &:nth-of-type(1) .aButton {
                     align-self: flex-end;
                 }
@@ -137,3 +149,38 @@ header {
     }
 }
 
+/* ====get in touch section===== */
+
+.getInTouchTextBox {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+        color: $dustyOrange;
+        text-align: center;
+        padding-bottom: 1.2rem;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .aButton {
+        align-self: center;
+        margin-top: 1.5rem;
+    }
+
+}
+
+.imageBreak {
+    width: 100vw;
+
+    img {
+        width: 100%;
+        min-height: 40vh;
+        object-fit: cover;
+        object-position: right;
+    }
+}
