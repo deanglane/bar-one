@@ -592,3 +592,29 @@ header img {
       align-self: flex-start;
   margin-top: 1.5rem;
 }
+
+/* ====instagram gallery section===== */
+.instagram {
+  background-color: #220303;
+  padding: 100px 0;
+}
+.instagram .galleryContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+.instagram .galleryContainer .gram {
+  width: 33.3333333333%;
+  cursor: pointer;
+}
+.instagram .galleryContainer .gram img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+/* ====footer===== */

@@ -209,9 +209,6 @@ header {
         display: flex;
         flex-direction: column;
         flex-basis: 65%;
-        // max-width: calc(100% / 1.5);
-        // max-height: 800px;
-
 
         h3 {
             color: $dustyOrange;
@@ -224,3 +221,34 @@ header {
         }
     }
 }
+
+/* ====instagram gallery section===== */
+
+.instagram {
+    background-color: $darkRed;
+    padding: 100px 0;
+
+    // gallery ul container
+    .galleryContainer {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        
+        // li
+        .gram {
+
+            // base style for all li items
+            width: calc(100% / 3);
+            cursor: pointer;
+            
+            // base style for all images
+            img {
+                object-fit: cover;
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* ====footer===== */
+
