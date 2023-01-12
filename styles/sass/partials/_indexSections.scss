@@ -1,7 +1,7 @@
 /* ====Index Sections SCSS===== */
 
 /* ====header===== */
-header {
+.indexHeader {
     background-image: url('../../../assets/home-image-1.jpg');
     background-size: cover;
     height: 75vh;
@@ -110,13 +110,13 @@ header {
                     width: calc(100vw / 2);
                     height: 100%;
                     object-fit: cover;
-                    box-shadow: -20px 20px 0px -0px #FF8327;
+                    box-shadow: -20px 20px 0px -0px $dustyOrange;
                 }
 
                 // top row image
                 .image1 {
                     right: 0;
-                    box-shadow: 20px 20px 0px -5px #FF8327;
+                    box-shadow: 20px 20px 0px -5px $dustyOrange;
                     top: -6%;
                 }
 
@@ -200,7 +200,7 @@ header {
     .eventImageBox {
         flex-basis: 25%;
         img {
-            box-shadow: -15px 15px 0px 0px #FF8327;
+            box-shadow: -15px 15px 0px 0px $dustyOrange;
             min-width: 25%;
             height: auto;
         }
@@ -252,3 +252,11 @@ header {
 
 /* ====footer===== */
 
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+
+    span {
+        font-size: 1rem;
+    }
+}
