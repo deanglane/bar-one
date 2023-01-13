@@ -758,3 +758,86 @@ h3 {
 .comments .comment1 {
   margin-bottom: 60px;
 }
+
+/* ====comment form===== */
+.nameEmail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+.nameEmail .top {
+  text-transform: capitalize;
+  width: calc(50% - 15px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.nameEmail .top input {
+  border: none;
+  border-bottom: 2px solid #FF8327;
+  margin-bottom: 30px;
+}
+
+.commentContainer {
+  width: 100%;
+}
+
+.fieldComment {
+  background-color: #111010;
+  color: #FFF;
+  border: 1px solid #FF8327;
+  width: 100%;
+  height: 180px;
+  padding-left: 20px;
+}
+.fieldComment::-webkit-input-placeholder {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.095rem;
+  color: #FFFFFF;
+  opacity: 1;
+  vertical-align: top;
+}
+.fieldComment::-moz-placeholder {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.095rem;
+  color: #FFFFFF;
+  opacity: 1;
+  vertical-align: top;
+}
+.fieldComment:-ms-input-placeholder {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.095rem;
+  color: #FFFFFF;
+  opacity: 1;
+  vertical-align: top;
+}
+.fieldComment::-ms-input-placeholder {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.095rem;
+  color: #FFFFFF;
+  opacity: 1;
+  vertical-align: top;
+}
+.fieldComment::placeholder {
+  font-family: "Chathura", sans-serif;
+  font-size: 1.95rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.095rem;
+  color: #FFFFFF;
+  opacity: 1;
+  vertical-align: top;
+}

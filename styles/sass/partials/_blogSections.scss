@@ -148,6 +148,51 @@
     }
 }
 
+/* ====comment form===== */
+
+.nameEmail {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+
+    .top {
+        text-transform: capitalize;
+        width: calc((100% / 2) - 15px);
+        display: flex;
+        flex-direction: column;
+        
+
+        input {
+            // background-color: $black;
+            border: none;
+            border-bottom: 2px solid $dustyOrange;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.commentContainer {
+    width: 100%;
+}
+
+.fieldComment {
+    background-color: $black;
+    color: #FFF;
+    border: 1px solid $dustyOrange;
+    width: 100%;
+    height: 180px;
+    padding-left: 20px;
+    
+    &::placeholder {
+        font-family: 'Chathura', sans-serif;
+        font-size: 1.95rem; // 39px
+        line-height: 1.5rem; // 30px
+        letter-spacing: 0.095rem; // 1.9px
+        color: $offWhite;
+        opacity: 1; // for color to work in firefox
+        vertical-align: top;
+    }
+}
 
 
 
