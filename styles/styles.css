@@ -223,7 +223,17 @@ template {
   overflow: hidden;
 }
 
-/* ====Variables===== */ /* ====base styles===== */
+/* ====Variables===== */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+/* ====base styles===== */
 .wrapper {
   max-width: 1280px;
   width: 85%;
@@ -760,84 +770,98 @@ h3 {
 }
 
 /* ====comment form===== */
-.nameEmail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-  margin-top: 40px;
-}
-.nameEmail .top {
-  text-transform: capitalize;
-  width: calc(50% - 15px);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.nameEmail .top input {
-  border: none;
-  border-bottom: 2px solid #FF8327;
-  margin-bottom: 30px;
-}
-
-.commentContainer {
+.formContainer {
+  padding: 50px;
   width: 100%;
 }
-
-.fieldComment {
+.formContainer .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.formContainer .topRow .top {
+  width: 50%;
+}
+.formContainer .topRow input {
+  width: 100%;
   background-color: #111010;
-  color: #FFF;
-  border: 1px solid #FF8327;
+  border: none;
+  border-bottom: 2px solid orange;
+}
+.formContainer .topRow label {
+  display: block;
+  padding-left: 15px;
+}
+.formContainer label {
+  display: block;
+  padding-left: 15px;
+}
+.formContainer textarea {
+  resize: none;
   width: 100%;
-  height: 180px;
-  padding-left: 20px;
+  height: 15vh;
+  margin-top: 40px;
+  padding: 30px 0 0 20px;
+  background-color: #111010;
+  border: 2px solid orange;
 }
-.fieldComment::-webkit-input-placeholder {
-  font-family: "Chathura", sans-serif;
-  font-size: 1.95rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.095rem;
-  color: #FFFFFF;
+.formContainer textarea::-webkit-input-placeholder {
   opacity: 1;
-  vertical-align: top;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1rem;
 }
-.fieldComment::-moz-placeholder {
-  font-family: "Chathura", sans-serif;
-  font-size: 1.95rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.095rem;
-  color: #FFFFFF;
+.formContainer textarea::-moz-placeholder {
   opacity: 1;
-  vertical-align: top;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1rem;
 }
-.fieldComment:-ms-input-placeholder {
-  font-family: "Chathura", sans-serif;
-  font-size: 1.95rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.095rem;
-  color: #FFFFFF;
+.formContainer textarea:-ms-input-placeholder {
   opacity: 1;
-  vertical-align: top;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1rem;
 }
-.fieldComment::-ms-input-placeholder {
-  font-family: "Chathura", sans-serif;
-  font-size: 1.95rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.095rem;
-  color: #FFFFFF;
+.formContainer textarea::-ms-input-placeholder {
   opacity: 1;
-  vertical-align: top;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1rem;
 }
-.fieldComment::placeholder {
-  font-family: "Chathura", sans-serif;
-  font-size: 1.95rem;
-  line-height: 1.5rem;
-  letter-spacing: 0.095rem;
-  color: #FFFFFF;
+.formContainer textarea::placeholder {
   opacity: 1;
-  vertical-align: top;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1rem;
+}
+.formContainer button {
+  font-family: "Tulpen One", cursive;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #BF2603;
+  padding: 0.4em 0.9em;
+  line-height: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 40px;
+  border: none;
+}
+.formContainer button:hover {
+  background-color: #FF8327;
+  color: #111010;
+}
+.formContainer button:focus {
+  background-color: #FF8327;
+  color: #111010;
+  border: 2px solid #FFFFFF;
 }

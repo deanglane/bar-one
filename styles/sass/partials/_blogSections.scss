@@ -150,49 +150,91 @@
 
 /* ====comment form===== */
 
-.nameEmail {
-    display: flex;
-    gap: 30px;
-    margin-top: 40px;
 
-    .top {
-        text-transform: capitalize;
-        width: calc((100% / 2) - 15px);
+.formContainer {
+    padding: 50px;
+    width: 100%;
+
+    .topRow {
         display: flex;
-        flex-direction: column;
-        
+        justify-content: space-between;
+        gap: 20px;
+
+        .top {
+            width: 50%;
+        }
 
         input {
-            // background-color: $black;
+            width: 100%;
+            background-color: $black;
             border: none;
-            border-bottom: 2px solid $dustyOrange;
-            margin-bottom: 30px;
+            border-bottom: 2px solid orange;
+        }
+
+        label {
+            display: block;
+            padding-left: 15px;
         }
     }
-}
 
-.commentContainer {
-    width: 100%;
-}
+    label {
+        display: block;
+        padding-left: 15px;
+    }
 
-.fieldComment {
-    background-color: $black;
-    color: #FFF;
-    border: 1px solid $dustyOrange;
-    width: 100%;
-    height: 180px;
-    padding-left: 20px;
-    
-    &::placeholder {
-        font-family: 'Chathura', sans-serif;
-        font-size: 1.95rem; // 39px
-        line-height: 1.5rem; // 30px
-        letter-spacing: 0.095rem; // 1.9px
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 15vh;
+        margin-top: 40px;
+        padding: 30px 0 0 20px;
+        background-color: $black;
+        border: 2px solid orange;
+    }
+
+    textarea::placeholder {
+        opacity: 1;
+        color: #fff;
+        letter-spacing: 1.9px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-family: 'Tulpen One', cursive;
+        font-size: 1.8rem;
+        text-transform: capitalize;
         color: $offWhite;
-        opacity: 1; // for color to work in firefox
-        vertical-align: top;
+        background: $rustRed;
+        padding: 0.4em 0.9em;
+        line-height: 1.2rem;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: 0.3s;
+        width: 100%;
+        margin-top: 40px;
+        border: none;
+
+        &:hover {
+            background-color: $dustyOrange;
+            color: $black;
+        }
+
+        &:focus {
+            background-color: $dustyOrange;
+            color: $black;
+            border: 2px solid $offWhite;    
+        }
+        
     }
 }
+
+
+
+
+
+
+
 
 
 

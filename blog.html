@@ -109,30 +109,24 @@
 
                                 <!-- ====comment form section===== -->
                                 <section>
-                                    <div class="wrapper">
-
                                         <!-- comments form submission -->
-
                                         <form action="">
-                                            <div class="nameEmail">
-                                                <!-- fisrt name -->
-                                                <label for="firstName" class="top name">name
-                                                    <input type="text" name="name" id="firstName">
-                                                </label>
-                                                <!-- email address -->
-                                                <label for="email" class="top email">email address
-                                                    <input type="email" name="email" id="email">
-                                                </label>
+                                            <div class="formContainer">
+                                                <div class="topRow">
+                                                    <div class="top">
+                                                        <label for="Name">Name</label>
+                                                        <input type="text" name="name" id="name">
+                                                    </div>
+                                                    <div class="top">
+                                                        <label for="email">Email</label>
+                                                        <input type="email" name="email" id="email">
+                                                    </div>
+                                                </div>
+                                                <label class="sr-only" for="comment">Comment</label>
+                                                <textarea name="textarea" id="comment" placeholder="Comment"></textarea>
+                                                <button type="submit">Post Comment</button>
                                             </div>
-                                            <!-- comment -->
-                                            <div class="commentContainer">
-                                                <label class="sr-only" for="comment">comment</label>
-                                                <input class="fieldComment" type="text-field" name="comment" id="comment" placeholder="Comment">
-                                            </div>
-
-                                            <button type="submit">post comment</button>
                                         </form><!-- form end -->
-                                    </div><!-- wrapper end -->
                                 </section>
 
                             </div><!-- wrapper end -->
