@@ -1,0 +1,44 @@
+/* ====Contact Sections SCSS===== */
+
+// TODO: needs to be specific to this page
+// main {
+    // }
+    
+    .contactHeader {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        background-image: url("../../../assets/contact-header-1.jpg");
+        background-position: bottom;
+    }
+    
+    
+    .contactContainer {
+        display: flex;
+        justify-content: space-between;
+        height: 60vh;
+    
+    .social ul{
+        display: flex;
+        gap: 20px;
+        padding-bottom: 10px;
+        padding-right: 30px;
+        width: 30vw;
+        outline: 2px solid #000;
+
+        li {
+            font-size: 1rem;
+        }
+    }
+
+    .contactEmail {
+        padding-bottom: 10px;
+    }
+    address {
+        padding-top: 100px;
+    }
+
+} 
+
+
+
