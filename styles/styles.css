@@ -521,17 +521,29 @@ a {
 .information ul li .community::before,
 .information ul li .blogImg::before,
 .information ul li .getInTouch::before {
+  content: "";
   font-family: "Font Awesome 6 Free";
   font-weight: 600;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 50px;
   text-align: center;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-color: #BF2603;
   position: absolute;
-  left: -3%;
+  left: -2%;
+  top: 55px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0.1em;
 }
 .information ul li .newSpace::before {
   content: "\e3af";

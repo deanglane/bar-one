@@ -27,6 +27,40 @@
 
 /* ====information section===== */
 
+// .information {
+//     padding-top: 180px;
+    
+//     ul {
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+
+//         li {
+//             width: calc(100% / 2);
+//             padding: 50px;
+//             position: relative;
+
+//             .circle {
+//                 width: 45px;
+//                 height: 45px;
+//                 border-radius: 50%;
+//                 background-color: $rustRed;
+//                 position: absolute;
+//                 left: -3%;
+//                 top: 19%;
+
+//                 i {
+//                     font-size: 25px;
+//                     position: absolute;
+//                     top: 20%;
+//                     left: 20%;
+//                 }
+//             }
+
+//         }
+//     }
+// }
+
 .information {
     padding-top: 180px;
     
@@ -34,28 +68,34 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
+        
         li {
             width: calc(100% / 2);
             padding: 50px;
             position: relative;
-
+            
             // font awesome pseudo element base style  
             .newSpace::before,
             .community::before,
             .blogImg::before,
             .getInTouch::before {
+                content: "";
                 font-family: "Font Awesome 6 Free";
                 font-weight: 600;
-                font-size: 30px;
+                font-size: 25px;
                 line-height: 50px;
                 text-align: center;
-                width: 50px;
-                height: 50px;
+                width: 45px;
+                height: 45px;
                 border-radius: 50%;
                 background-color: $rustRed;
                 position: absolute;
-                left: -3%;
+                left: -2%;
+                top: 55px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0.1em;
             }
             
             // font awesome individual images
