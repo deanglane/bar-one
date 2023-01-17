@@ -1,32 +1,27 @@
 /* ====Contact Sections SCSS===== */
 
-// TODO: needs to be specific to this page
-// main {
-    // }
-    
-    .contactHeader {
-        height: 30vh;
-        display: flex;
-        align-items: center;
-        background-image: url("../../../assets/contact-header-1.jpg");
-        background-position: bottom;
-    }
+.contactHeader {
+    height: 28vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../../../assets/contact-header-1.jpg");
+    background-position: bottom;
+}
     
     
-    .contactContainer {
-        display: flex;
-        justify-content: space-between;
-        height: 60vh;
+.contactContainer {
+    display: flex;
+    justify-content: space-between;
+    height: 60vh;
+    position: relative;
     
     .social ul{
         display: flex;
         gap: 20px;
-        padding-bottom: 10px;
-        padding-right: 30px;
         width: 30vw;
-        outline: 2px solid #000;
-
-        li {
+        margin-bottom: 20px;
+        
+        li i {
             font-size: 1rem;
         }
     }
@@ -40,5 +35,29 @@
 
 } 
 
+/* ====contact form===== */
 
+.contactFormContainer {
+    background-color: $darkRed;
+    padding: 50px;
+    box-shadow: 15px 15px 0 0 $dustyOrange;
+    position: absolute;
+    left: 35%;
+    top: -20%;
 
+    .contactTopRow input {
+        background-color: $darkRed;
+        border: none;
+        border-bottom: 2px solid $offWhite;
+    }
+
+    textarea {
+        background-color: $darkRed;
+        border: 2px solid $offWhite;
+        height: 25vh;
+    }
+
+    button {
+        text-transform: capitalize;
+    }
+}

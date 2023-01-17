@@ -293,6 +293,101 @@ img {
   color: #111010;
 }
 
+.formContainer .topRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.formContainer .topRow .top {
+  width: 50%;
+}
+.formContainer .topRow input {
+  width: 100%;
+  background-color: #111010;
+}
+.formContainer .topRow label {
+  display: block;
+  padding-left: 15px;
+}
+.formContainer label {
+  display: block;
+  padding-left: 15px;
+}
+.formContainer textarea {
+  resize: none;
+  width: 100%;
+  height: 15vh;
+  margin-top: 40px;
+  padding: 30px 0 0 20px;
+  background-color: #111010;
+  border: 2px solid orange;
+}
+.formContainer textarea::-webkit-input-placeholder {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1.9rem;
+  font-family: "Chathura", sans-serif;
+}
+.formContainer textarea::-moz-placeholder {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1.9rem;
+  font-family: "Chathura", sans-serif;
+}
+.formContainer textarea:-ms-input-placeholder {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1.9rem;
+  font-family: "Chathura", sans-serif;
+}
+.formContainer textarea::-ms-input-placeholder {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1.9rem;
+  font-family: "Chathura", sans-serif;
+}
+.formContainer textarea::placeholder {
+  opacity: 1;
+  color: #fff;
+  letter-spacing: 1.9px;
+  font-size: 1.9rem;
+  font-family: "Chathura", sans-serif;
+}
+.formContainer button {
+  font-family: "Tulpen One", cursive;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  background: #BF2603;
+  padding: 0.4em 0.9em;
+  line-height: 1.2rem;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 40px;
+  border: none;
+}
+.formContainer button:hover {
+  background-color: #FF8327;
+  color: #111010;
+}
+.formContainer button:focus {
+  background-color: #FF8327;
+  color: #111010;
+  border: 2px solid #FFFFFF;
+}
+
 html {
   font-size: 125%;
 }
@@ -344,16 +439,6 @@ a {
   transition: 0.3s;
 }
 
-.navigation a {
-  font-size: 1.9rem;
-  font-weight: 700;
-  line-height: 1.45rem;
-  letter-spacing: 0.095rem;
-  color: #FFFFFF;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
 .navigation h2 {
   font-family: "Tulpen One", cursive;
   color: #FFFFFF;
@@ -781,105 +866,22 @@ a {
 }
 
 /* ====comment form===== */
-.formContainer {
+.blogForm {
+  width: 100%;
   padding: 50px;
-  width: 100%;
 }
-.formContainer .topRow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 20px;
-}
-.formContainer .topRow .top {
-  width: 50%;
-}
-.formContainer .topRow input {
-  width: 100%;
-  background-color: #111010;
+.blogForm .blogTopRow input {
   border: none;
   border-bottom: 2px solid orange;
 }
-.formContainer .topRow label {
-  display: block;
-  padding-left: 15px;
-}
-.formContainer label {
-  display: block;
-  padding-left: 15px;
-}
-.formContainer textarea {
-  resize: none;
-  width: 100%;
-  height: 15vh;
-  margin-top: 40px;
-  padding: 30px 0 0 20px;
-  background-color: #111010;
+.blogForm textarea {
   border: 2px solid orange;
-}
-.formContainer textarea::-webkit-input-placeholder {
-  opacity: 1;
-  color: #fff;
-  letter-spacing: 1.9px;
-  font-size: 1rem;
-}
-.formContainer textarea::-moz-placeholder {
-  opacity: 1;
-  color: #fff;
-  letter-spacing: 1.9px;
-  font-size: 1rem;
-}
-.formContainer textarea:-ms-input-placeholder {
-  opacity: 1;
-  color: #fff;
-  letter-spacing: 1.9px;
-  font-size: 1rem;
-}
-.formContainer textarea::-ms-input-placeholder {
-  opacity: 1;
-  color: #fff;
-  letter-spacing: 1.9px;
-  font-size: 1rem;
-}
-.formContainer textarea::placeholder {
-  opacity: 1;
-  color: #fff;
-  letter-spacing: 1.9px;
-  font-size: 1rem;
-}
-.formContainer button {
-  font-family: "Tulpen One", cursive;
-  font-size: 1.8rem;
-  text-transform: capitalize;
-  color: #FFFFFF;
-  background: #BF2603;
-  padding: 0.4em 0.9em;
-  line-height: 1.2rem;
-  text-align: center;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 100%;
-  margin-top: 40px;
-  border: none;
-}
-.formContainer button:hover {
-  background-color: #FF8327;
-  color: #111010;
-}
-.formContainer button:focus {
-  background-color: #FF8327;
-  color: #111010;
-  border: 2px solid #FFFFFF;
+  height: 15vh;
 }
 
 /* ====Contact Sections SCSS===== */
 .contactHeader {
-  height: 30vh;
+  height: 28vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -898,18 +900,17 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 60vh;
+  position: relative;
 }
 .contactContainer .social ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  padding-bottom: 10px;
-  padding-right: 30px;
   width: 30vw;
-  outline: 2px solid #000;
+  margin-bottom: 20px;
 }
-.contactContainer .social ul li {
+.contactContainer .social ul li i {
   font-size: 1rem;
 }
 .contactContainer .contactEmail {
@@ -917,4 +918,28 @@ a {
 }
 .contactContainer address {
   padding-top: 100px;
+}
+
+/* ====contact form===== */
+.contactFormContainer {
+  background-color: #220303;
+  padding: 50px;
+  -webkit-box-shadow: 15px 15px 0 0 #FF8327;
+          box-shadow: 15px 15px 0 0 #FF8327;
+  position: absolute;
+  left: 35%;
+  top: -20%;
+}
+.contactFormContainer .contactTopRow input {
+  background-color: #220303;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+}
+.contactFormContainer textarea {
+  background-color: #220303;
+  border: 2px solid #FFFFFF;
+  height: 25vh;
+}
+.contactFormContainer button {
+  text-transform: capitalize;
 }

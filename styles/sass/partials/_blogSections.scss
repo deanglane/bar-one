@@ -150,82 +150,18 @@
 
 /* ====comment form===== */
 
-
-.formContainer {
-    padding: 50px;
+.blogForm {
     width: 100%;
+    padding: 50px;
 
-    .topRow {
-        display: flex;
-        justify-content: space-between;
-        gap: 20px;
-
-        .top {
-            width: 50%;
-        }
-
-        input {
-            width: 100%;
-            background-color: $black;
-            border: none;
-            border-bottom: 2px solid orange;
-        }
-
-        label {
-            display: block;
-            padding-left: 15px;
-        }
-    }
-
-    label {
-        display: block;
-        padding-left: 15px;
+    .blogTopRow input {
+        border: none;
+        border-bottom: 2px solid orange;
     }
 
     textarea {
-        resize: none;
-        width: 100%;
-        height: 15vh;
-        margin-top: 40px;
-        padding: 30px 0 0 20px;
-        background-color: $black;
         border: 2px solid orange;
-    }
-
-    textarea::placeholder {
-        opacity: 1;
-        color: #fff;
-        letter-spacing: 1.9px;
-        font-size: 1rem;
-    }
-
-    button {
-        font-family: 'Tulpen One', cursive;
-        font-size: 1.8rem;
-        text-transform: capitalize;
-        color: $offWhite;
-        background: $rustRed;
-        padding: 0.4em 0.9em;
-        line-height: 1.2rem;
-        text-align: center;
-        display: inline-block;
-        cursor: pointer;
-        transition: 0.3s;
-        width: 100%;
-        margin-top: 40px;
-        border: none;
-
-        &:hover {
-            background-color: $dustyOrange;
-            color: $black;
-        }
-
-        &:focus {
-            background-color: $dustyOrange;
-            color: $black;
-            border: 2px solid $offWhite;    
-        }
-        
+        height: 15vh;
     }
 }
 
