@@ -1,0 +1,67 @@
+/* ====Media Queries SCSS===== */
+
+// desktop screen or below
+@media (max-width: 960px) {
+    //gap between blog sections to become smaller
+    .blog .wrapper {
+        
+        .row {
+            // outline: 2px solid red;
+            column-gap: 100px;
+        }
+    }
+}
+
+.blog .wrapper .row {
+
+    &:nth-of-type(1) .textContainer {
+        padding-top: 30px;
+    }
+
+    &:nth-of-type(2) h2 {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .textContainer {
+        
+        h2 {
+            text-align: center;
+        }
+
+        .aButton {
+            align-self: center;
+        }
+
+        &:nth-of-type(1) .aButton {
+            align-self: center;
+        }
+
+    }
+}
+    // floating image to be lower to miss the heading naturally
+
+// tablet screen or below
+@media (max-width: 768px) {
+
+    .blog .wrapper .row {
+        flex-direction: column;
+
+        div {
+            width: 100%;
+        }
+
+        .imageContainer .image {
+            width: 100vw;
+        }
+    }
+}
+    // center the logo or remove floating image
+    // events change to flex direction column
+
+// phone screen or below
+@media (max-width: 480px) {}
+    // information section stacked
+    // blog section stacked
+    // event section stacked
+    // instagram stacked
