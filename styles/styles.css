@@ -678,9 +678,9 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 150px;
+  margin-top: 5rem;
   margin-bottom: 100px;
-  gap: 100px;
+  gap: 5rem;
 }
 .events .eventImageBox {
   -ms-flex-preferred-size: 25%;
@@ -964,25 +964,6 @@ a {
             column-gap: 100px;
   }
 }
-.blog .wrapper .row:nth-of-type(1) .textContainer {
-  padding-top: 30px;
-}
-.blog .wrapper .row:nth-of-type(2) h2 {
-  padding-top: 50px;
-  text-align: center;
-}
-.blog .wrapper .row .textContainer h2 {
-  text-align: center;
-}
-.blog .wrapper .row .textContainer .aButton {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-.blog .wrapper .row .textContainer:nth-of-type(1) .aButton {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
 @media (max-width: 768px) {
   .blog .wrapper .row {
     -webkit-box-orient: vertical;
@@ -993,7 +974,80 @@ a {
   .blog .wrapper .row div {
     width: 100%;
   }
+  .blog .wrapper .row:nth-of-type(1) .textContainer {
+    padding-top: 30px;
+  }
+  .blog .wrapper .row:nth-of-type(2) h2 {
+    padding-top: 100px;
+    text-align: center;
+  }
   .blog .wrapper .row .imageContainer .image {
     width: 100vw;
+  }
+  .blog .wrapper .row .textContainer {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .blog .wrapper .row .textContainer h2 {
+    text-align: center;
+  }
+  .blog .wrapper .row .textContainer .aButton {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .blog .wrapper .row .textContainer:nth-of-type(1) .aButton {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 2rem;
+  }
+  .getInTouchTextBox {
+    margin-top: 5rem;
+  }
+  .events {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 100px;
+  }
+  .events .eventTextBox {
+    text-align: center;
+  }
+  .events .eventTextBox .aButton {
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .information ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .information ul li {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .indexHeader img {
+    display: none;
+  }
+  .information {
+    padding-top: 2.5rem;
+  }
+  .instagram .galleryContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .instagram .galleryContainer .gram {
+    width: 75%;
   }
 }

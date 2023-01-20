@@ -27,40 +27,6 @@
 
 /* ====information section===== */
 
-// .information {
-//     padding-top: 180px;
-    
-//     ul {
-//         display: flex;
-//         justify-content: center;
-//         flex-wrap: wrap;
-
-//         li {
-//             width: calc(100% / 2);
-//             padding: 50px;
-//             position: relative;
-
-//             .circle {
-//                 width: 45px;
-//                 height: 45px;
-//                 border-radius: 50%;
-//                 background-color: $rustRed;
-//                 position: absolute;
-//                 left: -3%;
-//                 top: 19%;
-
-//                 i {
-//                     font-size: 25px;
-//                     position: absolute;
-//                     top: 20%;
-//                     left: 20%;
-//                 }
-//             }
-
-//         }
-//     }
-// }
-
 .information {
     padding-top: 180px;
     
@@ -231,11 +197,9 @@
 
 .events {
     display: flex;
-    // flex-wrap: wrap;
-    margin-top: 150px;
+    margin-top: 5rem;
     margin-bottom: 100px;
-    gap: 100px;
-
+    gap: 5rem;
     
     .eventImageBox {
         flex-basis: 25%;
