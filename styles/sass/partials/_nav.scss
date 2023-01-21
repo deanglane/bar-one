@@ -22,7 +22,7 @@
     align-items: center;
     gap: 50px;
     background: #000;
-    height: 60px;
+    height: 5vh;
     text-transform: uppercase;
     
     h2 {
@@ -35,7 +35,7 @@
 
     a:focus {
         color: $dustyOrange;
-        outline: none
+        // outline: none;
     }
 
 }

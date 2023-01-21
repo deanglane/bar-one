@@ -1,7 +1,7 @@
 /* ====Contact Sections SCSS===== */
 
 .contactHeader {
-    height: 28vh;
+    height: 35vh;
     display: flex;
     align-items: center;
     background-image: url("../../../assets/contact-header-1.jpg");
@@ -11,9 +11,7 @@
     
 .contactContainer {
     display: flex;
-    justify-content: space-between;
-    height: 60vh;
-    position: relative;
+    height: 56vh;
     
     .social ul{
         display: flex;
@@ -31,6 +29,7 @@
     }
     address {
         padding-top: 100px;
+        width: 30%;    
     }
 
 } 
@@ -41,9 +40,10 @@
     background-color: $darkRed;
     padding: 50px;
     box-shadow: 15px 15px 0 0 $dustyOrange;
-    position: absolute;
-    left: 35%;
-    top: -20%;
+    position: relative;
+    // left: 35%;
+    // top: -20%;
+    top: -100px;
 
     .contactTopRow input {
         background-color: $darkRed;
