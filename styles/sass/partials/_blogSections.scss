@@ -23,7 +23,6 @@
         background-color: $darkRed;
         width: 25vw;
         height: 100%;
-        min-width: 350px;
         margin-top: 100px;
         margin-right: 40px;
         margin-left: 80px;
@@ -55,15 +54,23 @@
 
                 }
             }
-
         }
 
-        img {
+        .missionImg {
             width: 400px;
-            height: auto;
-            position: relative;
-            left: -100px;
-            top: -15px;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                position: relative;
+                left: -100px;
+                top: -15px;
+                // left: 0;
+                // top: 0;
+            }
+        
+
         }
     }
 
@@ -71,6 +78,7 @@
     .post {
         display: flex;
         flex-direction: column;
+        height: 100%;
         position: relative;
         top: -145px;
         right: 0;
@@ -94,7 +102,7 @@
 
                 .content {
                     padding-bottom: 100px;
-                    width: 75%;
+                    // width: 75%;
 
                     h1 {
                         font-size: 3.4rem;
@@ -119,16 +127,21 @@
 /* ====comments section===== */
 .comments {
     padding-left: 40px;
-    margin-top: 60px;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     h3 {
         padding-bottom: 20px;
         text-transform: capitalize;
+        width: 60%;
     }
 
     // base style for all comments
     .comment {
         display: flex;
+        width: 60%;
         
         // base style for all profile images
         img {
@@ -151,17 +164,27 @@
 /* ====comment form===== */
 
 .blogForm {
-    width: 100%;
-    padding: 50px;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
-    .blogTopRow input {
-        border: none;
-        border-bottom: 2px solid orange;
+    .blogTopRow {
+        width: 60%;
+
+        input {
+            border: none;
+            border-bottom: 2px solid orange;
+        }    
     }
 
-    textarea {
-        border: 2px solid orange;
-        height: 15vh;
+    .blogTextArea {
+        width: 60%;
+
+        textarea {
+            border: 2px solid orange;
+            height: 20vh;
+        }
     }
 }
 

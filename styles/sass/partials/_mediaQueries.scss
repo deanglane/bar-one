@@ -2,7 +2,7 @@
 
 // desktop screen or below
 @media (max-width: 960px) {
-    //gap between blog sections to become smaller
+    /* ====index.scss===== */
     .blog .wrapper {
         
         .row {
@@ -10,13 +10,31 @@
             column-gap: 100px;
         }
     }
-}
 
-    // floating image to be lower to miss the heading naturally
+    .formContainer .topRow{
+        flex-direction: column;
+
+        .top {
+            width: 100%;
+        }
+    }
+}
 
 // tablet screen or below
 @media (max-width: 768px) {
 
+    /* ====index.scss===== */
+
+    // information section
+    .information ul {
+        flex-direction: column;
+
+            li {
+                width: 100%;
+            }
+        }
+
+    // blog section
     .blog .wrapper .row {
         flex-direction: column;
 
@@ -55,10 +73,12 @@
         }
     }
 
+    // get in touch section
     .getInTouchTextBox {
         margin-top: 5rem;
     }
-
+    
+    // events section
     .events {
     flex-direction: column;
     align-items: center;
@@ -72,29 +92,23 @@
             }
         }
     }
-
-    .information ul {
-        flex-direction: column;
-
-        li {
-            width: 100%;
-            // text-align: center;
-
-        }
-    }
 }
 
 // phone screen or below
 @media (max-width: 480px) {
     
+     /* ====index.scss===== */
+    // header
     .indexHeader img {
         display: none;
     }
 
+    // information section
     .information {
         padding-top: 2.5rem;
     }
 
+    // instagram section
     .instagram .galleryContainer {
         flex-direction: column;
         align-items: center;
@@ -104,7 +118,3 @@
         }
     }
 }
-    // information section stacked
-    // blog section stacked
-    // event section stacked
-    // instagram stacked
