@@ -2,6 +2,7 @@
 
 // desktop screen or below
 @media (max-width: 960px) {
+
     /* ====index.scss===== */
     .blog .wrapper {
         
@@ -16,6 +17,24 @@
 
         .top {
             width: 100%;
+        }
+    }
+
+    /* ====blog.scss===== */
+    .blogBox {
+        gap: 40px;
+
+        .asideBar{
+            font-size: 35px;
+            min-width: 240px;
+
+            li {
+                font-size: 35px;
+            }
+
+            .missionImg {
+                width: 300px;
+            }
         }
     }
 }
@@ -92,6 +111,31 @@
             }
         }
     }
+
+    /* ====blog.scss===== */
+    
+    // aside left hand side
+    .asideBar {
+        display: none;
+    }
+
+    // comments section
+    .comments {
+        align-items: center;
+
+        h3 {
+            width: 100%;
+        }
+
+        .comment {
+            width: 100%;
+        }
+    }
+
+    // form section
+    .blogForm {
+        align-items: center;
+    }
 }
 
 // phone screen or below
@@ -115,6 +159,36 @@
 
         .gram {
             width: 75%;
+        }
+    }
+
+    /* ====blog.scss===== */
+
+    // comments section
+    .comment {
+        flex-direction: column;
+
+        .commentImg {
+            align-self: center;
+
+            img {
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    // form section
+    .blogForm {
+        align-items: center;
+
+        .blogTopRow,
+        .blogTextArea {
+            width: 100%;
         }
     }
 }
