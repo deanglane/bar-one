@@ -78,6 +78,7 @@
 .blog {
     background-color: $darkRed;
     margin-top: 80px;
+    padding-bottom: 30px ;
 
     // wrapper flex
     .wrapper {
@@ -113,7 +114,7 @@
                 // base style for both images
                 .image {
                     position: absolute;
-                    width: calc(100vw / 2);
+                    width: calc(50vw - 100px);
                     height: 100%;
                     object-fit: cover;
                     box-shadow: -20px 20px 0px -0px $dustyOrange;

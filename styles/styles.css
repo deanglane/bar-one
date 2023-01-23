@@ -587,6 +587,7 @@ a {
 .blog {
   background-color: #220303;
   margin-top: 80px;
+  padding-bottom: 30px;
 }
 .blog .wrapper {
   display: -webkit-box;
@@ -621,7 +622,7 @@ a {
 }
 .blog .wrapper .row .imageContainer .image {
   position: absolute;
-  width: 50vw;
+  width: calc(50vw - 100px);
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
