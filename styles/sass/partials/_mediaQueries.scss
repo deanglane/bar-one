@@ -9,6 +9,10 @@
         .row {
             // outline: 2px solid red;
             column-gap: 100px;
+
+            .imageContainer .image {
+                width: calc(50vw - 50px)
+            }
         }
     }
 
@@ -76,8 +80,13 @@
         text-align: center;
         }
 
-        .imageContainer .image {
-            width: 100vw;
+        .imageContainer {
+            // position: static;
+
+            .image {
+                // position: static;
+                width:100%;
+            }
         }
 
         .textContainer {
