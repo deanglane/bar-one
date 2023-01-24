@@ -15,20 +15,30 @@
 <body>
 
     <!-- skip link -->
-    <!-- <a href="#main-content" class="skip-link">Skip to main content.</a> -->
+    <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
     <!-- ====header===== -->
     <header class="indexHeader">
         <!-- ====navigation===== -->
         <nav>
-            <!-- top navigation -->
-            <ul class="navigation">
-                <li><a href="#">home</a></li>
-                <li><a href="#">about</a></li>
-                <li><h2>Bar-One</h2></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
+            <div class="wrapper">
+                <!-- top navigation -->
+
+                <!-- mobile version navigation -->
+                <div class="mobileNav">
+                    <h2 class="h2Logo">Bar-One</h2>
+                    <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
+                </div>
+                
+                <!-- desktop navigation -->
+                <ul class="navigation">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><h2>Bar-One</h2></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </div>    
         </nav>
         
         <!-- logo  -->
@@ -45,10 +55,10 @@
     </header>
     
     <!-- ====main content===== -->
-    <main id="main-content">
+    <main id="mainContent">
         
         <!-- ====information section===== -->
-        <section>
+        <section aria-label="information">
             <div class="wrapper information">
 
                 
@@ -83,7 +93,7 @@
         </section>
     
         <!-- ====blog section===== -->
-        <section class="blog">
+        <section aria-label="blog" class="blog">
             <div class="wrapper">
                 
                 <div class="row">
@@ -93,7 +103,7 @@
                     <div class="textContainer">
                         <h2>Plan ahead</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque facilis neque molestias magnivelquidem unde officia deserunt eligendi natus illo et libero numquam dolore labore vitaelaborum delectus eos excepturi.</p>
-                        <a class="aButton" href="#">read more</a>
+                        <a class="aButton" href="#" aria-label="read more about planning ahead">read more</a>
                     </div>
                 </div>
 
@@ -101,7 +111,7 @@
                     <div class="textContainer">
                         <h2>New locations</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque facilis neque molestias magnivelquidem unde officia deserunt eligendi natus illo et libero numquam dolore labore vitaelaborum delectus eos excepturi.</p>
-                        <a class="aButton" href="#">read more</a>
+                        <a class="aButton" href="#" aria-label="read more about our new locations">read more</a>
                     </div>
                     <div class="imageContainer">
                         <img class="image image2" src="./assets/right-image.jpg" alt="a semi empty drinking bar with empty bar stools">
@@ -111,11 +121,11 @@
         </section>
         
         <!-- ====get in touch section===== -->
-        <section id="getInTouch">
+        <section aria-label="get in touch" id="getInTouch">
             <div class="wrapper getInTouchTextBox">
                 <h3>Want to host a party?</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere quia error hic eaque! Sed repellendus ducimus accusamus error placeat aperiam tempora nihil explicabo earum fugit, dolores ab quis! Explicabo, quia facilis iure dolor commodi amet dolores consectetur commodi amet dolores. </p>
-                <a class="aButton" href="">find out more</a>
+                <a class="aButton" href="" aria-label="read more about hosting a party with us">find out more</a>
             </div>
         </section>    
 
@@ -124,12 +134,12 @@
         <section>
             <!-- image-->
             <div class="imageBreak">
-                <img src="./assets/banner-image.jpg" alt="">
+                <img src="./assets/banner-image.jpg" alt="a pint of beer on a bar counter">
             </div>
         </section>
 
         <!-- ====events section===== -->
-        <section>
+        <section aria-labelledby="events">
             <div class="wrapper events">
 
                 <!-- image container -->
@@ -143,14 +153,14 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem omnis facere suscipit fugiat excepturi magnam maxime. Mollitia repellat, dolore ducimus tempore excepturi omnis doloribus libero, deserunt adipisci voluptas molestias tempora in corporis itaque, nulla aut atque cumque nostrum! Obcaecati commodi tempora eveniet beatae a delectus provident velit numquam.</p>
 
                     <!-- button for more informtion -->
-                    <a class="aButton" href="#">find out more</a>
+                    <a class="aButton" href="#" aria-label="read more about our events">find out more</a>
                 </div>
             </div><!-- wrapper end -->
             
         </section>
 
         <!-- ====Instagram Section===== -->
-        <section class="instagram">
+        <section aria-label="instagram" class="instagram">
             <div class="wrapper">
 
                 <!-- gallery container -->
@@ -180,7 +190,7 @@
 
         <!-- copyright area -->
         <div class="copyright">
-            <p>Copyright <span><i class="fa-regular fa-copyright"></i></span> 2019 Juno College</p>
+            <p>Copyright &copy; 2023 Juno College</p>
         </div>
     </footer>
 

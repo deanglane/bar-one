@@ -1,39 +1,47 @@
 /* ====Navigation===== */
 
-// .skipLink {
-//     font-size: 1rem;
-//     padding: 10px;
-//     background-color: $off-white;
-//     color: $black;
-//     position: absolute;
-//     top: 0;
-//     z-index: 10;
-//     text-align: center;
-//     width: 100%; // gives the container its size and centers on screen
-//     left: -100%; // removes the container 100% off the screen to the left
-//     &:focus {
-//         left: 0;
-//     }
-// }
+.skipLink {
+    font-size: 2.9rem;
+    padding: 10px;
+    background-color: $offWhite;
+    text-align: center;
+    color: $black;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    text-align: center;
+    // overflow: hidden;
+    width: 100%; // gives the container its size and centers on screen
+    left: -100%; // removes the container 100% off the screen to the left
+    &:focus {
+        left: 0;
+    }
+}
 
+.wrapper .mobileNav {
+    display: none;
+
+    .h2Logo {
+        font-family: 'Tulpen One', cursive;
+        color: $offWhite;
+        font-size: 2.5rem;
+    }
+}
 .navigation {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: clamp(1.5625rem, -0.1838rem + 5.8824vw, 3.125rem);
     height: 6vh;
     text-transform: uppercase;
-    
+
     a {
         display: inline-flex;
         align-items: center;
         height: 35px;
-        border-bottom: 2px solid transparent;
 
         &:hover {
             color: $dustyOrange;
-            border-bottom: 2px solid $dustyOrange;
-
         }
 
         &:focus {
@@ -44,6 +52,7 @@
 
     h2 {
         text-transform: none;
+        white-space: nowrap;
     }
 }
 

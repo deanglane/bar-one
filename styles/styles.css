@@ -394,11 +394,15 @@ img {
 
 /* ====footer===== */
 footer {
-  text-align: center;
   background-color: #333;
+  height: 4vh;
 }
-footer i {
-  font-size: 1rem;
+footer .copyright {
+  padding-top: 10px;
+  height: 100%;
+}
+footer .copyright p {
+  text-align: center;
 }
 
 html {
@@ -459,6 +463,32 @@ a {
 }
 
 /* ====Navigation===== */
+.skipLink {
+  font-size: 2.9rem;
+  padding: 10px;
+  background-color: #FFFFFF;
+  text-align: center;
+  color: #111010;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  text-align: center;
+  width: 100%;
+  left: -100%;
+}
+.skipLink:focus {
+  left: 0;
+}
+
+.wrapper .mobileNav {
+  display: none;
+}
+.wrapper .mobileNav .h2Logo {
+  font-family: "Tulpen One", cursive;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+
 .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -469,7 +499,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  gap: clamp(1.5625rem, -0.1838rem + 5.8824vw, 3.125rem);
   height: 6vh;
   text-transform: uppercase;
 }
@@ -481,17 +511,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 35px;
-  border-bottom: 2px solid transparent;
 }
 .navigation a:hover {
   color: #FF8327;
-  border-bottom: 2px solid #FF8327;
 }
 .navigation a:focus {
   color: #FF8327;
 }
 .navigation h2 {
   text-transform: none;
+  white-space: nowrap;
 }
 
 /* ====Index Sections SCSS===== */
@@ -1175,6 +1204,18 @@ a {
 }
 @media (max-width: 480px) {
   /* ====index.scss===== */
+  .wrapper .mobileNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 15px;
+  }
+  .navigation {
+    display: none;
+  }
   .indexHeader img {
     display: none;
   }

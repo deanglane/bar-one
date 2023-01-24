@@ -142,13 +142,16 @@ img {
 /* ====footer===== */
 
 footer {
-    text-align: center;
-    // padding-top: 10px;
     background-color: #333;
-    // height: 3vh;
-    // min-width: 330px;
+    height: 4vh;
 
-    i {
-        font-size: 1rem;
+    .copyright {
+        padding-top: 10px;
+        height: 100%;
+
+        p {
+            text-align: center;
+        }
     }
+
 }

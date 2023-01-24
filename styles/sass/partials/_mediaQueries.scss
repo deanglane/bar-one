@@ -54,6 +54,11 @@
 
     /* ====index.scss===== */
 
+    // Navigation
+    .navigation {
+        // gap: 20px;
+    } 
+
     // information section
     .information ul {
         flex-direction: column;
@@ -181,6 +186,19 @@
 @media (max-width: 480px) {
     
      /* ====index.scss===== */
+
+    // navigation
+    
+    .wrapper .mobileNav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
     // header
     .indexHeader img {
         display: none;
