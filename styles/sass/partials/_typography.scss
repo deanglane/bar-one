@@ -2,6 +2,7 @@ html {
     font-size: 125%; // default font size 20px (1rem = 20px)
 }
 
+// paragraph styling
 body {
     font-family: 'Chathura', sans-serif;
     color: $offWhite;
@@ -14,6 +15,7 @@ h2, h3 {
     color: $offWhite;
 }
 
+// main logo
 h1 {
     font-family: 'Tulpen One', cursive;
     font-size: 13.07rem; // 261.4px
@@ -39,6 +41,7 @@ h3 {
     margin-bottom: 0;
 }
 
+// anchor elements
 a {
     font-size: 1.9rem; // 38px
     font-weight: 700;
@@ -60,8 +63,3 @@ a {
         font-size: 2.5rem;
     }
 }
-
-// .skip-link {
-//     font-size: 1.9rem;
-//     font-weight: 700;
-// }

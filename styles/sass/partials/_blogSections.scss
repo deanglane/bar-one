@@ -1,5 +1,6 @@
 /* ====Blog Sections SCSS===== */
 
+// header
 .blogHeader {
     height: 45vh;
     display: flex;
@@ -16,6 +17,7 @@
     }
 }
 
+// blog content area
 .blogBox {
     display: flex;
     gap: 60px;
@@ -30,12 +32,29 @@
         margin-right: 40px;
         margin-left: 80px;
 
+        // image div
+        .missionImg {
+            width: 360px;
+
+            // top image style
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+                position: relative;
+                left: -100px;
+                top: -15px;
+            }
+        }
+
+        // link
         .asideBlogMission {
             a {
                 color: $dustyOrange;
             }
         }
 
+        // recent posts section
         .asideBlogNavigation {
             h3 {
                 text-transform: capitalize;
@@ -46,6 +65,7 @@
                 position: relative;
                 padding-left: 30px;
                 
+                // custom bullet point
                 &::before {
                     content: " · ";
                     color: red;
@@ -54,28 +74,11 @@
                     top: 30px;
                     left: 20px;
                     transform: translate(-50%, -25px);
-
                 }
             }
         }
 
-        .missionImg {
-            width: 360px;
-
-            img {
-                max-width: 100%;
-                // width: 370px;
-                height: auto;
-                object-fit: cover;
-                position: relative;
-                left: -100px;
-                top: -15px;
-                // left: 0;
-                // top: 0;
-            }
         
-
-        }
     }
 
     /* ====post content===== */
@@ -88,7 +91,7 @@
         right: 0;
 
         .postContainer {
-            //content container bow shadowing
+            //content container box shadowing
             box-shadow: 
                 -16px 15px 0px -8px $dustyOrange,
                 -16px 16px 0px -8px $dustyOrange,

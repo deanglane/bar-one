@@ -315,11 +315,7 @@ img {
 }
 .formContainer .topRow label {
   display: block;
-  padding-left: 15px;
-}
-.formContainer label {
-  display: block;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .formContainer textarea {
   resize: none;
@@ -391,20 +387,18 @@ img {
   margin-top: 40px;
   border: none;
 }
-.formContainer button:hover {
+.formContainer button:hover, .formContainer button:focus {
   background-color: #FF8327;
   color: #111010;
 }
 .formContainer button:focus {
-  background-color: #FF8327;
-  color: #111010;
   border: 2px solid #FFFFFF;
 }
 
 /* ====footer===== */
 footer {
   background-color: #333;
-  padding: 15px;
+  padding: 16px;
   text-align: center;
 }
 
@@ -495,25 +489,25 @@ a {
 }
 .navMenu .slidingMenu {
   background: #111010;
-  position: fixed;
-  z-index: 20;
   width: 100%;
+  height: auto;
+  position: fixed;
   left: -110%;
   top: 70px;
-  height: auto;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s; /* magic to animate it */
+  z-index: 20;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .navMenu .slidingMenu a {
   border-bottom: 1px solid grey;
+  width: 100%;
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
-  font-size: 40px;
-  width: 100%;
+  font-size: 1.9rem;
   padding: 20px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s; /*we also transition the background colour here*/
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .navMenu .slidingMenu a:hover, .navMenu .slidingMenu afocus {
   color: #FF8327;
@@ -877,6 +871,18 @@ label[for=toggle] {
   margin-right: 40px;
   margin-left: 80px;
 }
+.blogBox .asideBar .missionImg {
+  width: 360px;
+}
+.blogBox .asideBar .missionImg img {
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  left: -100px;
+  top: -15px;
+}
 .blogBox .asideBar .asideBlogMission a {
   color: #FF8327;
 }
@@ -897,18 +903,6 @@ label[for=toggle] {
   left: 20px;
   -webkit-transform: translate(-50%, -25px);
           transform: translate(-50%, -25px);
-}
-.blogBox .asideBar .missionImg {
-  width: 360px;
-}
-.blogBox .asideBar .missionImg img {
-  max-width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: relative;
-  left: -100px;
-  top: -15px;
 }
 .blogBox .post {
   display: -webkit-box;

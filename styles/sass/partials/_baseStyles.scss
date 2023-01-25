@@ -37,6 +37,7 @@ img {
     height: auto;
 }
 
+// a href link button
 .aButton {
     font-family: 'Tulpen One', cursive;
     font-size: 1.8rem;
@@ -59,8 +60,10 @@ img {
     }
 }
 
+// default form styling
 .formContainer {
 
+    // top row (name and email)
     .topRow {
         display: flex;
         justify-content: space-between;
@@ -70,6 +73,7 @@ img {
             width: 50%;
         }
 
+        // top row input field
         input {
             width: 100%;
             background-color: $black;
@@ -81,13 +85,8 @@ img {
 
         label {
             display: block;
-            padding-left: 15px;
+            padding-left: 20px;
         }
-    }
-
-    label {
-        display: block;
-        padding-left: 15px;
     }
 
     textarea {
@@ -102,18 +101,18 @@ img {
         padding: 15px 0 0 20px;
         background-color: $black;
         border: 2px solid orange;
+
+        &::placeholder {
+            opacity: 1;
+            color: #fff;
+            letter-spacing: 1.9px;
+            line-height: 1.15rem;
+            font-size: 1.9rem;
+            font-family: 'Chathura', sans-serif;
+        }
     }
 
-    textarea::placeholder {
-        opacity: 1;
-        color: #fff;
-        letter-spacing: 1.9px;
-        line-height: 1.15rem;
-        font-size: 1.9rem;
-        font-family: 'Chathura', sans-serif;
-    }
-
-    // form button
+    // form button "submit & post comment"
     button {
         font-family: 'Tulpen One', cursive;
         font-size: 1.8rem;
@@ -130,14 +129,13 @@ img {
         margin-top: 40px;
         border: none;
 
-        &:hover {
+        &:hover,
+        &:focus {
             background-color: $dustyOrange;
             color: $black;
         }
 
         &:focus {
-            background-color: $dustyOrange;
-            color: $black;
             border: 2px solid $offWhite;    
         }
         
@@ -148,6 +146,6 @@ img {
 
 footer {
     background-color: #333;
-    padding: 15px;
+    padding: 16px;
     text-align: center;
 }

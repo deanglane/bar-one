@@ -54,11 +54,6 @@
 
     /* ====index.scss===== */
 
-    // navigation
-    // .navigation {
-    //     gap: 20px;
-    // } 
-
     .navigation {
         display: none;
     }
@@ -94,10 +89,8 @@
         }
 
         .imageContainer {
-            // position: static;
 
             .image {
-                // position: static;
                 width:100%;
             }
         }
@@ -195,13 +188,6 @@
     
      /* ====index.scss===== */
 
-    //navigation
-    // .wrapper .mobileNav {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     padding-top: 15px;
-    // }
-
         // header
     .indexHeader {
         .logoContainer h1 {
@@ -258,3 +244,5 @@
         }
     }
 }
+
+
