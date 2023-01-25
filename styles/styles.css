@@ -395,13 +395,7 @@ img {
 /* ====footer===== */
 footer {
   background-color: #333;
-  height: 4vh;
-}
-footer .copyright {
-  padding-top: 10px;
-  height: 100%;
-}
-footer .copyright p {
+  padding: 15px;
   text-align: center;
 }
 
@@ -480,13 +474,56 @@ a {
   left: 0;
 }
 
-.wrapper .mobileNav {
+.navMenu {
   display: none;
 }
-.wrapper .mobileNav .h2Logo {
+.navMenu .h2Logo {
   font-family: "Tulpen One", cursive;
   color: #FFFFFF;
   font-size: 2.5rem;
+  text-align: right;
+  padding-top: 20px;
+}
+.navMenu .slidingMenu {
+  background: #111010;
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  left: -110%;
+  top: 70px;
+  height: auto;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; /* magic to animate it */
+}
+.navMenu .slidingMenu a {
+  border-bottom: 1px solid grey;
+  text-align: center;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 40px;
+  width: 100%;
+  padding: 20px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; /*we also transition the background colour here*/
+}
+.navMenu .slidingMenu a:hover, .navMenu .slidingMenu afocus {
+  color: #FF8327;
+  background-color: #222;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked + .slidingMenu {
+  left: 0;
+}
+
+label[for=toggle] {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  cursor: pointer;
 }
 
 .navigation {
@@ -538,6 +575,10 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 10;
+}
+.indexHeader .logoContainer h1,
+.indexHeader .logoContainer h2 {
+  white-space: nowrap;
 }
 .indexHeader img {
   width: 50%;
@@ -650,7 +691,7 @@ a {
 }
 .blog .wrapper .row .imageContainer .image {
   position: absolute;
-  width: calc(50vw - 109px);
+  width: calc(50vw - 100px);
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -736,10 +777,6 @@ a {
   margin-bottom: 100px;
   gap: 5rem;
 }
-.events .eventImageBox {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
-}
 .events .eventImageBox img {
   -webkit-box-shadow: -15px 15px 0px 0px #FF8327;
           box-shadow: -15px 15px 0px 0px #FF8327;
@@ -754,8 +791,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-preferred-size: 65%;
-      flex-basis: 65%;
 }
 .events .eventTextBox h3 {
   color: #FF8327;
@@ -1089,6 +1124,12 @@ a {
 }
 @media (max-width: 768px) {
   /* ====index.scss===== */
+  .navigation {
+    display: none;
+  }
+  .navMenu {
+    display: inline;
+  }
   .information ul {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1204,17 +1245,8 @@ a {
 }
 @media (max-width: 480px) {
   /* ====index.scss===== */
-  .wrapper .mobileNav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    padding-top: 15px;
-  }
-  .navigation {
-    display: none;
+  .indexHeader .logoContainer h1 {
+    white-space: normal;
   }
   .indexHeader img {
     display: none;
