@@ -407,11 +407,11 @@ html {
 }
 
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Open Sans", sans-serif;
   color: #FFFFFF;
   font-size: 1.3rem;
   line-height: 1.5rem;
-  letter-spacing: -1.4px;
+  letter-spacing: 1.35px;
 }
 
 h2, h3 {
