@@ -1,0 +1,59 @@
+/* ====Menu Sections===== */
+
+// header
+.menuHeader {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../../../assets/home-image-1.jpg");
+  background-position: 15%;
+  background-size: cover;
+
+  .title {
+    flex-grow: 1;
+    padding-top: 100px;
+    text-transform: capitalize;
+  }
+}
+
+/* ====menu===== */
+.menuContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .menuSectionHeader h2 {
+    color: $dustyOrange;
+    margin: 30px 0;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .menuItem {
+      margin-bottom: 30px;
+
+     .menuItemHeading {
+      text-transform: uppercase;
+      font-weight: bolder;
+      font-size: 2.4rem;
+      // margin-bottom: 10px;
+      
+     }
+
+      .menuItemDescription {
+        display: inline-block;
+        // margin-bottom: 10px;
+      }
+
+      .menuItemPrice {
+        display: inline-block;
+        color: $dustyOrange;
+      }
+
+    }
+  }
+}

@@ -1086,6 +1086,74 @@ label[for=toggle] {
   text-transform: capitalize;
 }
 
+/* ====Menu Sections===== */
+.menuHeader {
+  height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url("../../../assets/home-image-1.jpg");
+  background-position: 15%;
+  background-size: cover;
+}
+.menuHeader .title {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 100px;
+  text-transform: capitalize;
+}
+
+/* ====menu===== */
+.menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menuContainer .menuSectionHeader h2 {
+  color: #FF8327;
+  margin: 30px 0;
+}
+.menuContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.menuContainer ul .menuItem {
+  margin-bottom: 30px;
+}
+.menuContainer ul .menuItem .menuItemHeading {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 2.4rem;
+}
+.menuContainer ul .menuItem .menuItemDescription {
+  display: inline-block;
+}
+.menuContainer ul .menuItem .menuItemPrice {
+  display: inline-block;
+  color: #FF8327;
+}
+
 /* ====Media Queries SCSS===== */
 @media (max-width: 960px) {
   /* ====index.scss===== */
@@ -1293,7 +1361,7 @@ label[for=toggle] {
             align-items: center;
   }
   .blogForm .blogTopRow,
-.blogForm .blogTextArea {
+  .blogForm .blogTextArea {
     width: 100%;
   }
 }
