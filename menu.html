@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700&family=Tulpen+One&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Tulpen+One&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/33b85127f5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/styles.css">
+  <script src='./js/script.js' defer></script> 
   <title>Bar One</title>
 </head>
 
@@ -59,14 +60,29 @@
     </div>
   </header> 
 
+  <section>
+    <button class="button open-button">open modal</button>
+  </section>
+
+  <section>
+    <dialog class="modal" id="modal">
+      <button class="button close-button"><i class="fa-solid fa-rectangle-xmark"></i></button>
+      <h2>Let us choose a meal for you</h2>
+      <p>Too many delicious meals to try?</p>
+      <p>Why not let us choose a few meals for you.</p>
+      <button>yes</button>
+      <button class="no-button">no, I'll choose</button>
+    </dialog>
+  </section>
+
   <!-- ====menu===== -->
   <section class="menuSection">
     <div class="wrapper">
 
-      <!-- Antipasti -->
+      <!-- Appetizer -->
       <div class="menuContainer">
         <div class="menuSectionHeader">
-          <h2>Antipasti</h2>
+          <h2>Appetizer</h2>
         </div>
         <ul>
           <li class="menuItem">

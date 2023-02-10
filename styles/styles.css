@@ -407,11 +407,11 @@ html {
 }
 
 body {
-  font-family: "Chathura", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: #FFFFFF;
-  font-size: 1.95rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
-  letter-spacing: 0.095rem;
+  letter-spacing: -1.4px;
 }
 
 h2, h3 {
@@ -427,7 +427,7 @@ h1 {
 }
 
 h2 {
-  font-size: 4.16rem;
+  font-size: 3rem;
   font-weight: 700;
   line-height: 2rem;
   letter-spacing: 2.6px;
@@ -435,7 +435,7 @@ h2 {
 }
 
 h3 {
-  font-size: 3.4rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 2.9rem;
   letter-spacing: 0.11rem;
@@ -443,7 +443,7 @@ h3 {
 }
 
 a {
-  font-size: 1.9rem;
+  font-size: 1.4rem;
   font-weight: 700;
   line-height: 1.45rem;
   letter-spacing: 0.095rem;
@@ -1088,7 +1088,7 @@ label[for=toggle] {
 
 /* ====Menu Sections===== */
 .menuHeader {
-  height: 30vh;
+  height: 40vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1111,6 +1111,49 @@ label[for=toggle] {
   text-transform: capitalize;
 }
 
+/* ====modal===== */
+#modal {
+  padding: 10px;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: #FFFFFF;
+  color: #111010;
+  font-weight: 700;
+}
+
+.button:hover,
+.button:focus {
+  color: #FF8327;
+}
+
+form {
+  display: grid;
+  gap: 1em;
+}
+
+.modal {
+  width: 50%;
+}
+.modal h2 {
+  color: #111010;
+  font-size: 2rem;
+}
+
+.modal::-webkit-backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.modal > * {
+  margin: 0 0 0.5rem 0;
+}
+
 /* ====menu===== */
 .menuContainer {
   display: -webkit-box;
@@ -1126,7 +1169,7 @@ label[for=toggle] {
 }
 .menuContainer .menuSectionHeader h2 {
   color: #FF8327;
-  margin: 30px 0;
+  margin: 60px 0;
 }
 .menuContainer ul {
   display: -webkit-box;
@@ -1139,12 +1182,13 @@ label[for=toggle] {
   text-align: center;
 }
 .menuContainer ul .menuItem {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .menuContainer ul .menuItem .menuItemHeading {
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
 }
 .menuContainer ul .menuItem .menuItemDescription {
   display: inline-block;
