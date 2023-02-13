@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&family=Tulpen+One&display=swap"
-    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Tulpen+One&display=swap"rel="stylesheet">
   <script src="https://kit.fontawesome.com/33b85127f5.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./styles/styles.css">
   <script src='./js/script.js' defer></script> 
@@ -57,17 +58,18 @@
   </header> 
 
   <section>
-    <button class="button open-button">open modal</button>
-  </section>
-
-  <section>
     <dialog class="modal" id="modal">
       <button class="button close-button"><i class="fa-solid fa-rectangle-xmark"></i></button>
-      <h2>Let us choose a meal for you</h2>
-      <p>Too many delicious meals to try?</p>
-      <p>Why not let us choose a few meals for you.</p>
-      <button>yes</button>
-      <button class="no-button">no, I'll choose</button>
+      <div class="inside">
+        <div class="selectionImgContainer">
+          <img id="dean" src="" alt="loading">
+        </div>
+        <h2 id="menuName"></h2>
+        <p id="menuDescription"></p>
+        <p id="menuPrice"></p>
+        <button class="button placeOrder">Add to order</button>
+        <button class="browse">Cancel</button>
+      </div>  
     </dialog>
   </section>
 
@@ -82,22 +84,20 @@
         </div>
         <ul>
           <li class="menuItem">
-            <p class="menuItemHeading">Caesar Salad</p>
-            <p class="menuItemDescription">hearts of romaine, focaccia crouton, parmesan dressing</p>
-            <p class="menuItemPrice">12</p>
+            <p class="menuItemHeading" value="./assets/gallery-image-3.jpg">Caesar Salad</p>
+            <p class="menuItemDescription">hearts of romaine, focaccia crouton, parmesan dressing <span class="menuItemPrice">12</span></p>
           </li>
           <li class="menuItem">
-            <p class="menuItemHeading">Mussels</p>
-            <p class="menuItemDescription">white wine, spicy tomato, saffron, preserved lemon, herbs</p>
-            <p class="menuItemPrice">16</p>
+            <p class="menuItemHeading" value="./assets/gallery-image-2.jpg">Mussels</p>
+            <p class="menuItemDescription">white wine, spicy tomato, saffron, preserved lemon, herbs <span>16</span></p>
           </li>
           <li class="menuItem">
-            <p class="menuItemHeading">Meatballs</p>
+            <p class="menuItemHeading" value="./assets/gallery-image-1.jpg">Meatballs</p>
             <p class="menuItemDescription">beef, pork, veal, san marzano tomato, basil, polenta, parmesan</p>
             <p class="menuItemPrice">14</p>
           </li>
           <li class="menuItem">
-            <p class="menuItemHeading">Burrata</p>
+            <p class="menuItemHeading" value="./assets/gallery-image-2.jpg">Burrata</p>
             <p class="menuItemDescription">roasted fall squash, arugula, parmesan, aleppo, pumpkin seed vinaigrette</p>
             <p class="menuItemPrice">17</p>
           </li>
@@ -201,8 +201,21 @@
         </ul>
       </div>
 
-    </div>  
+      
+    </div> <!-- wrapper end -->
+
+    <div class="orderPage" id="orderPage">
+      <button class="button closeOrderPage"><i class="fa-solid fa-rectangle-xmark"></i></button>
+      <h2>Order:</h2>
+      <ul></ul>
+      <p>Amount: $<span>0.00</span></p>
+      <p>HST 13%: $<span>0.00</span></p>
+      <p>Total: $<span>0.00</span></p>
+      </p>
+    </div>
+
   </section>
+  
 
       <!-- ====footer===== -->
   <footer>
