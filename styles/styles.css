@@ -1184,8 +1184,40 @@ form {
 .menuSection .orderPage {
   background-color: #fff;
   color: #000;
-  width: 33%;
+  width: 33.3333333333vw;
+  height: 100%;
   display: none;
+}
+.menuSection .orderPage .orderContent {
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.menuSection .orderPage .orderContent h2 {
+  color: #111010;
+}
+.menuSection .orderPage .orderContent ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  gap: 20px;
+}
+.menuSection .orderPage .orderContent ul li p {
+  font-size: 1rem;
+  line-height: 25px;
+  padding-right: 25px;
+}
+.menuSection .orderPage .orderContent ul li p:last-child {
+  text-align: right;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+.menuSection .orderPage .orderContent ul li i {
+  padding-right: 5px;
+  font-size: 0.9rem;
 }
 
 .menuContainer {
@@ -1203,7 +1235,7 @@ form {
 .menuContainer .menuSectionHeader h2 {
   color: #FF8327;
   font-weight: 800;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .menuContainer ul {
   display: -webkit-box;
@@ -1218,7 +1250,7 @@ form {
 .menuContainer ul li p:first-child {
   cursor: pointer;
   text-transform: uppercase;
-  margin-top: 20px;
+  margin-top: 50px;
   font-weight: 700;
   display: inline-block;
   border-bottom: 1px solid transparent;
@@ -1227,9 +1259,11 @@ form {
   color: #FF8327;
   border-bottom: 1px solid #FF8327;
 }
+.menuContainer ul li p:nth-child(2) {
+  font-size: 1.2rem;
+}
 .menuContainer ul li p span {
   color: #FF8327;
-  margin-bottom: 50px;
 }
 
 /* ====Media Queries SCSS===== */
