@@ -409,8 +409,8 @@ html {
 body {
   font-family: "Roboto Condensed", sans-serif;
   color: #FFFFFF;
-  font-size: 1.6rem;
-  line-height: 2.3rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
   letter-spacing: 1.35px;
 }
 
@@ -443,7 +443,7 @@ h3 {
 }
 
 a {
-  font-size: 1.95rem;
+  font-size: 1.3rem;
   font-weight: 700;
   line-height: 1.45rem;
   letter-spacing: 0.095rem;
@@ -1189,11 +1189,35 @@ form {
   display: none;
 }
 .menuSection .orderPage .orderContent {
-  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 15px;
+  padding: 20px 20px 20px 20px;
+  border: 2px solid #111010;
   font-size: 1.2rem;
+}
+.menuSection .orderPage .orderContent .closeOrderPage {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 .menuSection .orderPage .orderContent h2 {
   color: #111010;
+  margin: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.menuSection .orderPage .orderContent ul {
+  -ms-flex-preferred-size: 200px;
+      flex-basis: 200px;
+  margin-bottom: 50px;
 }
 .menuSection .orderPage .orderContent ul li {
   display: -webkit-box;

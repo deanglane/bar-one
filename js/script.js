@@ -13,9 +13,10 @@ const itemName = document.querySelector("#menuName");
 const itemDesc = document.querySelector("#menuDescription");
 const itemPrice = document.querySelector("#menuPrice");
 
+
 let mealName = "";
 let mealPrice = 0;
-let mealSum = [];
+const mealSum = [];
 // modal.showModal();
 
 // modal & side order page
@@ -33,13 +34,20 @@ closeOrderPage.addEventListener("click", function () {
   openOrderPage.style.display = "none";
 })
 
-//adding meals to the order form
+const subTotal = document.getElementById("subTotal");
+const subTotalTax = document.getElementById("subTotalTax");
+const total = document.getElementById("total");
+// add meals to the order form
 // this might need to be a submit button not click
 placeOrder.addEventListener("click", function () {
   modal.close();
   openOrderPage.style.display = "block";
+  
   const meal = mealName;
   console.log(meal);
+
+  
+  
   // create a new list element
   const newLi = document.createElement('li');
   newLi.innerHTML = `
@@ -47,23 +55,36 @@ placeOrder.addEventListener("click", function () {
   <p>${meal}</p>
   <p>$${mealPrice}</p>
   `;
-  mealSum.push(mealPrice); // adds stored items to an array for total
-  // const paragraphElement = document.createElement("p");
-  // paragraphElement.textContent = meal;
-  // newLi.appendChild(paragraphElement);
+  // append new list element to the DOM
   const ulTarget = document.getElementById('clientOrder');
   ulTarget.appendChild(newLi);
+  
+  
+  // create an array for storing the meals price
+  mealSum.push(Number(mealPrice)); // adds stored items to an array for total
+  
+  // calculates the subTotal and return it
+  const mealSumTotal = mealSum.reduce((totalValue, currentAmount) => {
+    return totalValue + currentAmount;
+  });
+  // takes the tallied total of the ordered meals and passes it as an argument to the function taxCalc
+  taxCalc(mealSumTotal);
 
-  //return the price into an array for reducing or summing
-  // displayOrderWindow();
 });
 
+// function to calculate the tax and totals and add them to the DOM
+const taxCalc = (sub) => {
+  // current tax percentage
+  const tax = 0.13;
+  // total tax tallied
+  let subTax = sub * tax;
+  // added the tallied tax and grand total to the order window  
+  subTotal.textContent = (sub).toFixed(2); // correct
+  subTotalTax.textContent = (sub * tax).toFixed(2); // correct
+  total.textContent = (sub + subTax).toFixed(2);
+};
 
-// function displayOrderWindow() {
-//   ulTarget.innerHTML = '';
-//   newLi.innerHTML = "<h2>Your Order</h2>";
-//   ulTarget.appendChild(newLi);
-// };
+// delete items from the order window
 
 
 
@@ -108,6 +129,7 @@ for (let i = 0; i < menuItem.length; i++) {
     return mealName, mealPrice
   })
 };
+
 
 
 

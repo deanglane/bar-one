@@ -82,6 +82,7 @@ form {
 .menuSection {
   display: flex;
   
+  // order window
   .orderPage {
     background-color: #fff;
     color: #000;
@@ -89,36 +90,52 @@ form {
     height: 100%;
     display: none;
 
+    
     .orderContent {
-      // position: fixed;
-      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 15px;
+      padding: 20px 20px 20px 20px;
+      border: 2px solid $black;
       font-size: 1.2rem;
+
+      .closeOrderPage {
+        align-self: flex-end;
+      }
 
       h2 {
         color: $black;
+        margin: 20px 0;
+        font-size: 2rem;
+        text-align: center;
       }
 
-      ul li {
-        display: flex;
-        align-items: baseline;
-        gap: 20px;
+      ul {
+        flex-basis: 200px;
+        margin-bottom: 50px;
 
-        p {
-          font-size: 1rem;
-          line-height: 25px;
-          padding-right: 25px;
-        }
-        p:last-child {
-          text-align: right;
-          flex-grow: 1;
-        }
-
-        i {
-          padding-right: 5px;
-          font-size: 0.9rem;
-        }
+        li {
+          display: flex;
+          align-items: baseline;
+          gap: 20px;
+  
+          p {
+            font-size: 1rem;
+            line-height: 25px;
+            padding-right: 25px;
+          }
+          p:last-child {
+            text-align: right;
+            flex-grow: 1;
+          }
+  
+          i {
+            padding-right: 5px;
+            font-size: 0.9rem;
+          }
+        }   
       } 
-      
     }
   }
 }
