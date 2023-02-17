@@ -1180,13 +1180,21 @@ form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+}
+.menuSection .fakeWindow {
+  width: calc(33.3333333333vw + 133px);
+  display: none;
 }
 .menuSection .orderPage {
   background-color: #fff;
   color: #000;
   width: 33.3333333333vw;
-  height: 100%;
   display: none;
+  margin-top: 100px;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 .menuSection .orderPage .orderContent {
   display: -webkit-box;
@@ -1213,25 +1221,25 @@ form {
   margin: 20px 0;
   font-size: 2rem;
   text-align: center;
+  text-decoration: underline;
 }
 .menuSection .orderPage .orderContent ul {
-  -ms-flex-preferred-size: 200px;
-      flex-basis: 200px;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
   margin-bottom: 50px;
 }
 .menuSection .orderPage .orderContent ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
   gap: 20px;
+  text-transform: capitalize;
 }
 .menuSection .orderPage .orderContent ul li p {
   font-size: 1rem;
   line-height: 25px;
   padding-right: 25px;
+  margin-top: 5px;
 }
 .menuSection .orderPage .orderContent ul li p:last-child {
   text-align: right;
@@ -1239,9 +1247,8 @@ form {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.menuSection .orderPage .orderContent ul li i {
-  padding-right: 5px;
-  font-size: 0.9rem;
+.menuSection .orderPage .orderContent ul li img {
+  width: 22px;
 }
 
 .menuContainer {

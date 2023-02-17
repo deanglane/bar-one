@@ -233,16 +233,21 @@
 
     </div> <!-- wrapper end -->
 
+    <div class="fakeWindow" id="fakeWindow"></div>
     <div class="orderPage" id="orderPage">
       <div class="orderContent">
         <button class="button closeOrderPage"><i class="fa-solid fa-rectangle-xmark"></i></button>
         <h2>Your Order</h2>
         <ul id="clientOrder">
         </ul>
-        <div>
+        <div class="totals">
           <p>Amount: $<span id="subTotal">0.00</span></p>
           <p>HST 13%: $<span id="subTotalTax">0.00</span></p>
           <p>Total: $<span id="total">0.00</span></p>
+        </div>
+        <div class="orderButtons" id="orderButtons">
+          <button>Cancel</button>
+          <button>Place Order</button>
         </div>
       </div>
     </div>

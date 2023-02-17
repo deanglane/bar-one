@@ -81,16 +81,24 @@ form {
 
 .menuSection {
   display: flex;
-  
+  position: relative;
+
+  .fakeWindow {
+      width: calc((100vw / 3) + 133px);
+      display: none;
+    }
+
   // order window
   .orderPage {
     background-color: #fff;
     color: #000;
     width: calc(100vw / 3);
-    height: 100%;
     display: none;
+    margin-top: 100px;
+    position: fixed;
+    right: 0;
+    top: 0;
 
-    
     .orderContent {
       display: flex;
       flex-direction: column;
@@ -99,6 +107,7 @@ form {
       padding: 20px 20px 20px 20px;
       border: 2px solid $black;
       font-size: 1.2rem;
+
 
       .closeOrderPage {
         align-self: flex-end;
@@ -109,30 +118,34 @@ form {
         margin: 20px 0;
         font-size: 2rem;
         text-align: center;
+        text-decoration: underline;
       }
 
       ul {
-        flex-basis: 200px;
+        flex-basis: 500px;
         margin-bottom: 50px;
 
         li {
           display: flex;
-          align-items: baseline;
           gap: 20px;
+          text-transform: capitalize;
+
   
           p {
             font-size: 1rem;
             line-height: 25px;
             padding-right: 25px;
+            margin-top: 5px;
+
           }
           p:last-child {
             text-align: right;
             flex-grow: 1;
           }
   
-          i {
-            padding-right: 5px;
-            font-size: 0.9rem;
+          img {
+            width: 22px;
+
           }
         }   
       } 
