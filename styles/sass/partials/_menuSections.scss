@@ -99,7 +99,7 @@ form {
     right: 0;
     top: 10%;
     bottom: 10%;
-    overflow-y: scroll;
+
     opacity: 0.8;
 
     .orderContent {
@@ -109,6 +109,7 @@ form {
       margin: 15px;
       padding: 20px 20px 20px 20px;
       border: 2px solid $black;
+      height: 100%;
       font-size: 1.2rem;
 
       .closeOrderPage {
@@ -146,8 +147,11 @@ form {
             flex-grow: 1;
           }
   
-          img {
-            width: 22px;
+          .trash {
+            background-image: url("../../../assets/trash-can-solid.svg");
+            background-size: cover;
+            width: 25px;
+            cursor: pointer;
 
           }
         }   

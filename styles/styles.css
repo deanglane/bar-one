@@ -1196,7 +1196,6 @@ form {
   right: 0;
   top: 10%;
   bottom: 10%;
-  overflow-y: scroll;
   opacity: 0.8;
 }
 .menuSection .orderPage .orderContent {
@@ -1213,6 +1212,7 @@ form {
   margin: 15px;
   padding: 20px 20px 20px 20px;
   border: 2px solid #111010;
+  height: 100%;
   font-size: 1.2rem;
 }
 .menuSection .orderPage .orderContent .closeOrderPage {
@@ -1248,8 +1248,11 @@ form {
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
-.menuSection .orderPage .orderContent ul li img {
-  width: 22px;
+.menuSection .orderPage .orderContent ul li .trash {
+  background-image: url("../../../assets/trash-can-solid.svg");
+  background-size: cover;
+  width: 25px;
+  cursor: pointer;
 }
 .menuSection .orderPage .orderContent .orderButtons {
   margin-bottom: 80px;
