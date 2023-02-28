@@ -1156,6 +1156,9 @@ form {
 }
 .modal .inside .selectionImgContainer img {
   background-size: cover;
+  width: 200px;
+  width: 200px;
+  aspect-ratio: 1/1;
   max-width: 100%;
 }
 .modal .inside h2 {
@@ -1240,7 +1243,6 @@ form {
   font-size: 1rem;
   line-height: 25px;
   padding-right: 25px;
-  margin-top: 5px;
 }
 .menuSection .orderPage .orderContent ul li p:last-child {
   text-align: right;
@@ -1250,9 +1252,12 @@ form {
 }
 .menuSection .orderPage .orderContent ul li .trash {
   background-image: url("../../../assets/trash-can-solid.svg");
-  background-size: cover;
-  width: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 23px;
   cursor: pointer;
+  opacity: 0.5;
 }
 .menuSection .orderPage .orderContent .orderButtons {
   margin-bottom: 80px;
