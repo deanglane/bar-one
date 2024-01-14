@@ -1,279 +1,543 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Tulpen+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/33b85127f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./js/script.js" defer></script>
+    <title>Bar One</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Tulpen+One&display=swap"rel="stylesheet">
-  <script src="https://kit.fontawesome.com/33b85127f5.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./styles/styles.css">
-  <script src='./js/script.js' defer></script> 
-  <title>Bar One</title>
-</head>
+  <body>
+    <!-- ====header===== -->
+    <header class="menuHeader">
+      <!-- ====navigation===== -->
+      <nav class="wrapper">
+        <!-- mobile version navigation -->
+        <div class="navMenu">
+          <h2 class="h2Logo">Bar-One</h2>
+          <label class="test" for="toggle">
+            <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" name="toggle" id="toggle" />
 
-<body>
-  <!-- ====header===== -->
-  <header class="menuHeader">
-  
-    <!-- ====navigation===== -->
-    <nav class="wrapper">
-  
-      <!-- mobile version navigation -->
-      <div class="navMenu">
-        <h2 class="h2Logo">Bar-One</h2>
-        <label class="test" for="toggle">
-          <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" name="toggle" id="toggle">
-  
-        <!-- slide out menu -->
-        <ul class="slidingMenu">
+          <!-- slide out menu -->
+          <ul class="slidingMenu">
+            <li><a href="./index.html">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
+        <!-- desktop navigation -->
+        <!-- top bar menu -->
+        <ul class="navigation">
           <li><a href="./index.html">home</a></li>
           <li><a href="#">menu</a></li>
+          <li><h2>Bar-One</h2></li>
           <li><a href="blog.html">blog</a></li>
           <li><a href="contact.html">contact</a></li>
         </ul>
+      </nav>
+
+      <!-- ====header===== -->
+      <div class="wrapper title">
+        <h2>Menu</h2>
       </div>
-  
-      <!-- desktop navigation -->
-      <!-- top bar menu -->
-      <ul class="navigation">
-        <li><a href="./index.html">home</a></li>
-        <li><a href="#">menu</a></li>
-        <li><h2>Bar-One</h2>
-        </li><li><a href="blog.html">blog</a></li>
-        <li><a href="contact.html">contact</a></li>
-      </ul>
-    </nav>
+    </header>
 
-    <!-- ====header===== -->
-    <div class="wrapper title">
-      <h2>Menu</h2>
-    </div>
-  </header> 
-
-  <section>
-    <dialog class="modal" id="modal">
-      <button class="button close-button"><i class="fa-solid fa-rectangle-xmark"></i></button>
-      <div class="inside">
-        <div class="selectionImgContainer">
-          <img id="mealImage" src="" alt="meal choice loading">
+    <section>
+      <dialog class="modal" id="modal">
+        <button class="button close-button">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+        <div class="inside">
+          <div class="selectionImgContainer">
+            <img id="mealImage" src="" alt="meal choice loading" />
+          </div>
+          <h2 id="menuName"></h2>
+          <p id="menuDescription"></p>
+          <p id="menuPrice"></p>
+          <button class="button placeOrder">Add to order</button>
+          <button class="browse">Cancel</button>
         </div>
-        <h2 id="menuName"></h2>
-        <p id="menuDescription"></p>
-        <p id="menuPrice"></p>
-        <button class="button placeOrder">Add to order</button>
-        <button class="browse">Cancel</button>
-      </div>  
-    </dialog>
-  </section>
+      </dialog>
+    </section>
 
-  <section>
-    <dialog class="modal" id="modalOrderPlaced">
-      <button class="button close-button" id="closeThanks"><i class="fa-solid fa-rectangle-xmark"></i></button>
-      <h2>Your order has been submitted to our kitchen</h2>
-      <p>Thank you for your Order!</p>
-    </dialog>
-  </section>
+    <section>
+      <dialog class="modal" id="modalOrderPlaced">
+        <button class="button close-button" id="closeThanks">
+          <i class="fa-solid fa-rectangle-xmark"></i>
+        </button>
+        <h2>Your order has been submitted to our kitchen</h2>
+        <p>Thank you for your Order!</p>
+      </dialog>
+    </section>
 
-  <!-- ====menu===== -->
-  <section class="menuSection">
-    <div class="wrapper">
-
-      <!-- Appetizer -->
-      <div class="menuContainer">
-        <div class="menuSectionHeader">
-          <h2>starters</h2>
+    <!-- ====menu===== -->
+    <section class="menuSection">
+      <div class="wrapper">
+        <!-- Appetizer -->
+        <div class="menuContainer">
+          <div class="menuSectionHeader">
+            <h2>starters</h2>
+          </div>
+          <ul>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="avobean"
+                value="./assets/meals/avo_bean_dip_28879437404_1088f90a5c_b.jpg"
+              >
+                avocado bean dip
+              </p>
+              <p class="menuItemDescription">
+                avocado and white bean dip, served with corn chips
+                <span class="menuItemPrice">11</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="masCal"
+                value="./assets/meals/masala_calamari_esperanza-doronila-Gc9O2ZozB4A-unsplash.jpg"
+              >
+                masala calamari
+              </p>
+              <p class="menuItemDescription">
+                Chickpea & rice flour coating, crisp slaw, garam masala,
+                cilantro, spiced lemon aioli drizzle, spicy mango dip
+                <span class="menuItemPrice">17</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="buffaliWings"
+                value="./assets/meals/buffalo_classic_wingsscott-eckersley-R-7_ErUOLxw-unsplash.jpg"
+              >
+                buffalo classic wings
+              </p>
+              <p class="menuItemDescription">
+                1 lb chicken wings tossed in house made buffalo sauce
+                <span class="menuItemPrice">18</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="cauliBites"
+                value="./assets/meals/cauliflower_bites_aleisha-kalina-WUfEd9RaVrw-unsplash.jpg"
+              >
+                buffalo cauliflower bites
+              </p>
+              <p class="menuItemDescription">
+                Panko-crusted, tossed in Frank’s Hot Sauce, dill ranch drizzle
+                <span class="menuItemPrice">16</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="poutine"
+                value="./assets/meals/poutine_taine-noble-aii_jyCufzY-unsplash.jpg"
+              >
+                bar one poutine
+              </p>
+              <p class="menuItemDescription">
+                Pork gravy, veal jus, spring onion, Quebec cheese curds
+                <span class="menuItemPrice">14</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="sweetFries"
+                value="./assets/meals/Sweet_potato_fries_logan-weaver-lgnwvr-qgZRZI-pKgM-unsplash.jpg"
+              >
+                sweet potato fries
+              </p>
+              <p class="menuItemDescription">
+                With chipotle aioli <span class="menuItemPrice">12</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="fries"
+                value="./assets/meals/French_fries_louis-hansel-vi0kZuoe0-8-unsplash.jpg"
+              >
+                fresh handcut fries
+              </p>
+              <p class="menuItemDescription">
+                Parmesan cheese & truffle oil
+                <span class="menuItemPrice">10</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="fishTaco"
+                value="./assets/meals/fish_taco_the-nix-company-61wG5-SAF_Y-unsplash.jpg"
+              >
+                blackened fish taco
+              </p>
+              <p class="menuItemDescription">
+                Blackened haddock, red cabbage, pico de gallo, salsa verde
+                <span class="menuItemPrice">18</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="nacho"
+                value="./assets/meals/nachos_erick-su-WjBp05j8LXI-unsplash.jpg"
+              >
+                nachos
+              </p>
+              <p class="menuItemDescription">
+                Fresh-cut tortilla chips, 3-cheese blend, cajun beef, jalapeño,
+                pickled onion, queso, roasted garlic tomato salsa, sour cream
+                <span class="menuItemPrice">19</span>
+              </p>
+            </li>
+          </ul>
         </div>
-        <ul>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="avobean" value="./assets/meals/avo_bean_dip_28879437404_1088f90a5c_b.jpg">avocado bean dip</p>
-            <p class="menuItemDescription">avocado and white bean dip, served with corn chips <span class="menuItemPrice">11</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="masCal" value="./assets/meals/masala_calamari_esperanza-doronila-Gc9O2ZozB4A-unsplash.jpg">masala calamari</p>
-            <p class="menuItemDescription">Chickpea & rice flour coating, crisp slaw, garam masala, cilantro, spiced lemon aioli drizzle, spicy mango dip <span class="menuItemPrice">17</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="buffaliWings" value="./assets/meals/buffalo_classic_wingsscott-eckersley-R-7_ErUOLxw-unsplash.jpg">buffalo classic wings</p>
-            <p class="menuItemDescription">1 lb chicken wings tossed in house made buffalo sauce <span class="menuItemPrice">18</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="cauliBites" value="./assets/meals/cauliflower_bites_aleisha-kalina-WUfEd9RaVrw-unsplash.jpg">buffalo cauliflower bites</p>
-            <p class="menuItemDescription">Panko-crusted, tossed in Frank’s Hot Sauce, dill ranch drizzle <span class="menuItemPrice">16</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="poutine" value="./assets/meals/poutine_taine-noble-aii_jyCufzY-unsplash.jpg">bar one poutine</p>
-            <p class="menuItemDescription">Pork gravy, veal jus, spring onion, Quebec cheese curds <span class="menuItemPrice">14</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="sweetFries" value="./assets/meals/Sweet_potato_fries_logan-weaver-lgnwvr-qgZRZI-pKgM-unsplash.jpg">sweet potato fries</p>
-            <p class="menuItemDescription">With chipotle aioli <span class="menuItemPrice">12</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="fries" value="./assets/meals/French_fries_louis-hansel-vi0kZuoe0-8-unsplash.jpg">fresh handcut fries</p>
-            <p class="menuItemDescription">Parmesan cheese & truffle oil <span class="menuItemPrice">10</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="fishTaco" value="./assets/meals/fish_taco_the-nix-company-61wG5-SAF_Y-unsplash.jpg">blackened fish taco</p>
-            <p class="menuItemDescription">Blackened haddock, red cabbage, pico de gallo, salsa verde <span class="menuItemPrice">18</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="nacho" value="./assets/meals/nachos_erick-su-WjBp05j8LXI-unsplash.jpg">nachos</p>
-            <p class="menuItemDescription">Fresh-cut tortilla chips, 3-cheese blend, cajun beef, jalapeño, pickled onion, queso, roasted garlic tomato salsa, sour cream <span class="menuItemPrice">19</span></p>
-          </li>          
-        </ul>
+
+        <!-- Salads & Greens -->
+        <div class="menuContainer">
+          <div class="menuSectionHeader">
+            <h2>salads & greens</h2>
+          </div>
+          <ul>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="falafelSalad"
+                value="./assets/meals/falafel_salad_46874220894_b0d6ab9ed4_b.jpg"
+              >
+                falafel hippie bowl
+              </p>
+              <p class="menuItemDescription">
+                Crisp falafel, kale, shaved brussels sprouts, carrots, red
+                cabbage, cucumber, avocado, hummus, toasted sunflower seeds,
+                lemon miso tahini dressing
+                <span class="menuItemPrice" class="menuItemPrice">19</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="chickenCob"
+                value="./assets/meals/chicken_salad_8693611191_9cbc0fd22f_b.jpg"
+              >
+                crispy chicken cobb salad
+              </p>
+              <p class="menuItemDescription">
+                Heritage lettuce, chicken tenders, bacon, hard-boiled egg, blue
+                cheese, avocado, marinated tomatoes, cucumber, herb buttermilk
+                ranch <span class="menuItemPrice">25</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="caesar"
+                value="./assets/meals/caesar_salad_3010150846_a9caecacac_b.jpg"
+              >
+                classic caesar
+              </p>
+              <p class="menuItemDescription">
+                Fresh-grated parmesan, croutons, bacon, house dressing, charred
+                lemon <span class="menuItemPrice">17</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="greens"
+                value="./assets/meals/pub_greens_48788672966_903b4a3c80_b.jpg"
+              >
+                pub greens
+              </p>
+              <p class="menuItemDescription">
+                Heritage lettuce, tomatoes, grapes, goat cheese, candied seeds,
+                chive vinaigrette <span class="menuItemPrice">16</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="shripSalad"
+                value="./assets/meals/shrimp-salad-1365691744Ksv.jpg"
+              >
+                mediterranean shrimp salad
+              </p>
+              <p class="menuItemDescription">
+                Grilled shrimp, marinated feta, kalamata olives, heirloom
+                tomatoes, cucumber, sumac oregano vinaigrette
+                <span class="menuItemPrice">25</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- burgers & sandwiches -->
+        <div class="menuContainer">
+          <div class="menuSectionHeader">
+            <h2>burgers & sandwiches</h2>
+          </div>
+          <ul>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="burger1"
+                value="./assets/meals/straightup_burger_3031024@2x.jpg"
+              >
+                straight up
+              </p>
+              <p class="menuItemDescription">
+                Ontario Angus ground chuck, lettuce, tomato, dill pickle,
+                Russian dressing, brioche bun
+                <span class="menuItemPrice">18</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="baroneBurger"
+                value="./assets/meals/barone_burger_3031024@2x.jpg"
+              >
+                the bar one experience
+              </p>
+              <p class="menuItemDescription">
+                Double chuck patty, jalapeño popper, jalapeño havarti cheese,
+                iceberg lettuce, avocado, chipotle aioli
+                <span class="menuItemPrice">22</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="beanBurger"
+                value="./assets/meals/Bean_burger_4529654843_e08fd5ccee_z.jpg"
+              >
+                bean burger baby
+              </p>
+              <p class="menuItemDescription">
+                Bean patty, chimichurri, avocado, tomato, coleslaw, gluten-free
+                seed bun <span class="menuItemPrice">22</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="texasChicken"
+                value="./assets/meals/texas-burger_10987602223_ebe1758314_b.jpg"
+              >
+                texas crunchy chicken
+              </p>
+              <p class="menuItemDescription">
+                Buttermilk & pickle juice brined chicken thigh, coleslaw, bread
+                & butter pickles, chipotle mayo
+                <span class="menuItemPrice">21</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="fishSandwich"
+                value="./assets/meals/fish_sandwich_10409629676_521141273b_b.jpg"
+              >
+                blackened fish sandwich
+              </p>
+              <p class="menuItemDescription">
+                Blackened haddock loin, tartar sauce, sambal cucumber, brioche
+                bun <span class="menuItemPrice">22</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="kidsBurger"
+                value="./assets/meals/kids_burger_28678019217_cd4337f5b1_b.jpg"
+              >
+                kiddy kids burger
+              </p>
+              <p class="menuItemDescription">
+                VG beef & mushrom pattie with ozery toasted bun
+                <span class="menuItemPrice">14</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- signature plates -->
+        <div class="menuContainer">
+          <div class="menuSectionHeader">
+            <h2>signature plates</h2>
+          </div>
+          <ul>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="chickenPie"
+                value="./assets/meals/pot_pie_6585474603_477dfc2e47_b.jpg"
+              >
+                chicken pot pie
+              </p>
+              <p class="menuItemDescription">
+                Roasted chicken, bacon, kale, potatoes, carrots & onions,
+                wrapped in home-style pastry, served with pub greens
+                <span class="menuItemPrice">18</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="chickenTenders"
+                value="./assets/meals/chicken_tenders_9694575778_e2ac045a13_b.jpg"
+              >
+                buttermilk chicken tenders
+              </p>
+              <p class="menuItemDescription">
+                Buttermilk-brined chicken tenders, hand-cut fries, plum sauce
+                <span class="menuItemPrice">23</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="fishChips"
+                value="./assets/meals/fish_chipc_4501614578_8b8ebb7e0f_b.jpg"
+              >
+                fish & chips
+              </p>
+              <p class="menuItemDescription">
+                Beer-battered haddock, hand-cut fries, coleslaw, dill tartar
+                sauce <span class="menuItemPrice">21</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="macCheese"
+                value="./assets/meals/mac_n_cheese_11277483134_5def890a47_b.jpg"
+              >
+                mac n cheese
+              </p>
+              <p class="menuItemDescription">
+                classic style mac n cheese <span class="menuItemPrice">22</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- pizzas -->
+        <div class="menuContainer">
+          <div class="menuSectionHeader">
+            <h2>pizzas</h2>
+          </div>
+          <ul>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="margPizza"
+                value="./assets/meals/marg_pizza_czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvYTAxOS1qYWt1YmstMDc0Ni1iYXNpYy1waXp6YS1tYXJnaGVyaXRhLmpwZw.jpg"
+              >
+                margherita
+              </p>
+              <p class="menuItemDescription">
+                Classic style margarita pizza
+                <span class="menuItemPrice">14</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="peperPizza"
+                value="./assets/meals/pepper_pzza_2843872893_f9b8c25bd8_b.jpg"
+              >
+                peppereno
+              </p>
+              <p class="menuItemDescription">
+                Pepperoni, pickled jalapeno, parmesan, organic honey, basil.
+                <span class="menuItemPrice">18</span>
+              </p>
+            </li>
+            <li class="menuItem">
+              <p
+                class="menuItemHeading"
+                id="hawPizza"
+                value="./assets/meals/hawaiian_pizza_49732814378_ee8244c96d_b.jpg"
+              >
+                hawaiian pizza
+              </p>
+              <p class="menuItemDescription">
+                Rosemary ham, bacon, pineapple, red onion, fontina, apricot jam,
+                BBQ sauce. <span class="menuItemPrice">18</span>
+              </p>
+            </li>
+          </ul>
+
+          <ul>
+            <li>
+              <p>
+                Disclaimer - this is a fake website for the purpose of education
+                only.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
-      
-      <!-- Salads & Greens -->
-      <div class="menuContainer">
-        <div class="menuSectionHeader">
-          <h2>salads & greens</h2>
-        </div>
-        <ul>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="falafelSalad" value="./assets/meals/falafel_salad_46874220894_b0d6ab9ed4_b.jpg">falafel hippie bowl</p>
-            <p class="menuItemDescription">Crisp falafel, kale, shaved brussels sprouts, carrots, red cabbage, cucumber, avocado, hummus, toasted sunflower seeds, lemon miso tahini dressing <span class="menuItemPrice"
-                class="menuItemPrice">19</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="chickenCob" value="./assets/meals/chicken_salad_8693611191_9cbc0fd22f_b.jpg">crispy chicken cobb salad</p>
-            <p class="menuItemDescription">Heritage lettuce, chicken tenders, bacon, hard-boiled egg, blue cheese, avocado, marinated tomatoes, cucumber, herb buttermilk ranch <span class="menuItemPrice">25</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="caesar" value="./assets/meals/caesar_salad_3010150846_a9caecacac_b.jpg">classic caesar</p>
-            <p class="menuItemDescription">Fresh-grated parmesan, croutons, bacon, house dressing, charred lemon <span class="menuItemPrice">17</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="greens" value="./assets/meals/pub_greens_48788672966_903b4a3c80_b.jpg">pub greens</p>
-            <p class="menuItemDescription">Heritage lettuce, tomatoes, grapes, goat cheese, candied seeds, chive vinaigrette <span class="menuItemPrice">16</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="shripSalad" value="./assets/meals/shrimp-salad-1365691744Ksv.jpg">mediterranean shrimp salad</p>
-            <p class="menuItemDescription">Grilled shrimp, marinated feta, kalamata olives, heirloom tomatoes, cucumber, sumac oregano vinaigrette <span class="menuItemPrice">25</span></p>
-          </li>
-        </ul>
-      </div>
+      <!-- wrapper end -->
 
-      <!-- burgers & sandwiches -->
-      <div class="menuContainer">
-        <div class="menuSectionHeader">
-          <h2>burgers & sandwiches</h2>
-        </div>
-        <ul>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="burger1" value="./assets/meals/straightup_burger_3031024@2x.jpg">straight up</p>
-            <p class="menuItemDescription">Ontario Angus ground chuck, lettuce, tomato, dill pickle, Russian dressing, brioche bun <span class="menuItemPrice">18</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="baroneBurger" value="./assets/meals/barone_burger_3031024@2x.jpg">the bar one experience</p>
-            <p class="menuItemDescription">Double chuck patty, jalapeño popper, jalapeño havarti cheese, iceberg lettuce, avocado, chipotle aioli <span class="menuItemPrice">22</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="beanBurger" value="./assets/meals/Bean_burger_4529654843_e08fd5ccee_z.jpg">bean burger baby</p>
-            <p class="menuItemDescription">Bean patty, chimichurri, avocado, tomato, coleslaw, gluten-free seed bun <span class="menuItemPrice">22</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="texasChicken" value="./assets/meals/texas-burger_10987602223_ebe1758314_b.jpg">texas crunchy chicken</p>
-            <p class="menuItemDescription">Buttermilk & pickle juice brined chicken thigh, coleslaw, bread & butter pickles, chipotle mayo <span class="menuItemPrice">21</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="fishSandwich" value="./assets/meals/fish_sandwich_10409629676_521141273b_b.jpg">blackened fish sandwich</p>
-            <p class="menuItemDescription">Blackened haddock loin, tartar sauce, sambal cucumber, brioche bun <span class="menuItemPrice">22</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="kidsBurger" value="./assets/meals/kids_burger_28678019217_cd4337f5b1_b.jpg">kiddy kids burger</p>
-            <p class="menuItemDescription">VG beef & mushrom pattie with ozery toasted bun <span class="menuItemPrice">14</span></p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- signature plates -->
-      <div class="menuContainer">
-        <div class="menuSectionHeader">
-          <h2>signature plates</h2>
-        </div>
-        <ul>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="chickenPie" value="./assets/meals/pot_pie_6585474603_477dfc2e47_b.jpg">chicken pot pie</p>
-            <p class="menuItemDescription">Roasted chicken, bacon, kale, potatoes, carrots & onions, wrapped in home-style pastry, served with pub greens <span class="menuItemPrice">18</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="chickenTenders" value="./assets/meals/chicken_tenders_9694575778_e2ac045a13_b.jpg">buttermilk chicken tenders</p>
-            <p class="menuItemDescription">Buttermilk-brined chicken tenders, hand-cut fries, plum sauce <span class="menuItemPrice">23</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="fishChips" value="./assets/meals/fish_chipc_4501614578_8b8ebb7e0f_b.jpg">fish & chips</p>
-            <p class="menuItemDescription">Beer-battered haddock, hand-cut fries, coleslaw, dill tartar sauce <span class="menuItemPrice">21</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="macCheese" value="./assets/meals/mac_n_cheese_11277483134_5def890a47_b.jpg">mac n cheese</p>
-            <p class="menuItemDescription">classic style mac n cheese <span class="menuItemPrice">22</span></p>
-          </li>
-        </ul>
-      </div>
-
-      <!-- pizzas -->
-      <div class="menuContainer">
-        <div class="menuSectionHeader">
-          <h2>pizzas</h2>
-        </div>
-        <ul>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="margPizza" value="./assets/meals/marg_pizza_czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvYTAxOS1qYWt1YmstMDc0Ni1iYXNpYy1waXp6YS1tYXJnaGVyaXRhLmpwZw.jpg">margherita</p>
-            <p class="menuItemDescription">Classic style margarita pizza <span class="menuItemPrice">14</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="peperPizza" value="./assets/meals/pepper_pzza_2843872893_f9b8c25bd8_b.jpg">peppereno</p>
-            <p class="menuItemDescription">Pepperoni, pickled jalapeno, parmesan, organic honey, basil. <span class="menuItemPrice">18</span></p>
-          </li>
-          <li class="menuItem">
-            <p class="menuItemHeading" id="hawPizza" value="./assets/meals/hawaiian_pizza_49732814378_ee8244c96d_b.jpg">hawaiian pizza</p>
-            <p class="menuItemDescription">Rosemary ham, bacon, pineapple, red onion, fontina, apricot jam, BBQ sauce. <span class="menuItemPrice">18</span>
-            </p>
-        </ul>
-        <ul>
-          <li>
-            <p>Disclaimer - this is a fake website for the purpose of education only. </p>
-          </li>
-        </ul>
-      </div>
-
-
-    </div> <!-- wrapper end -->
-
-    <div class="fakeWindow" id="fakeWindow"></div>
-    <div class="orderPage" id="orderPage">
-      <div class="orderContent">
-        <button class="button closeOrderPage"><i class="fa-solid fa-rectangle-xmark"></i></button>
-        <h2>Your Order</h2>
-        <ul id="clientOrder">
-        </ul>
-        <div class="totals">
-          <p>Amount: $<span id="subTotal">0.00</span></p>
-          <p>HST 13%: $<span id="subTotalTax">0.00</span></p>
-          <p>Total: $<span id="total">0.00</span></p>
-        </div>
-        <div class="orderButtons" id="orderButtons">
-          <button id="cancel">Cancel</button>
-          <button id="placeOrder">Place Order</button>
+      <div class="fakeWindow" id="fakeWindow"></div>
+      <div class="orderPage" id="orderPage">
+        <div class="orderContent">
+          <button class="button closeOrderPage">
+            <i class="fa-solid fa-rectangle-xmark"></i>
+          </button>
+          <h2>Your Order</h2>
+          <ul id="clientOrder"></ul>
+          <div class="totals">
+            <p>Amount: $<span id="subTotal">0.00</span></p>
+            <p>HST 13%: $<span id="subTotalTax">0.00</span></p>
+            <p>Total: $<span id="total">0.00</span></p>
+          </div>
+          <div class="orderButtons" id="orderButtons">
+            <button id="cancel">Cancel</button>
+            <button id="placeOrder">Place Order</button>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-  </section>
-
-      <!-- ====footer===== -->
-  <footer>
-  
-    <!-- copyright area -->
-    <p>Copyright &copy; 2023 Juno College</p>
-  </footer>
-  
-</body> 
+    <!-- ====footer===== -->
+    <footer>
+      <!-- copyright area -->
+      <p>
+        Created by
+        <span>
+          <a href="https://deanlane.ca/">Dean Lane </a>
+        </span>
+        Copyright
+        <span> &copy; </span> All rights reserved
+      </p>
+    </footer>
+  </body>
 </html>

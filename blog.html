@@ -1,181 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700;800&family=Tulpen+One&display=swap"
-        rel="stylesheet">
-    <script src="https://kit.fontawesome.com/33b85127f5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700;800&family=Tulpen+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/33b85127f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Bar One Blog</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- skip link -->
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
     <header class="blogHeader">
-        <!-- ====navigation===== -->
-        <nav class="wrapper">
-        
-            <!-- mobile version navigation -->
-            <div class="navMenu">
-                <h2 class="h2Logo">Bar-One</h2>
-                <label class="test" for="toggle">
-                    <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
-                </label>
-                <input type="checkbox" name="toggle" id="toggle">
-        
-                <!-- slide out menu -->
-                <ul class="slidingMenu">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </div>
-        
-            <!-- desktop navigation -->
-            <!-- top bar menu -->
-            <ul class="navigation">
-                <li><a href="index.html">home</a></li>
-                <li><a href="menu.html">menu</a></li>
-                <li><h2>Bar-One</h2></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-    
-    <!-- ====header===== -->
-        <div class="wrapper title">
-            <h2>blog</h2>
-        </div>    
+      <!-- ====navigation===== -->
+      <nav class="wrapper">
+        <!-- mobile version navigation -->
+        <div class="navMenu">
+          <h2 class="h2Logo">Bar-One</h2>
+          <label class="test" for="toggle">
+            <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" name="toggle" id="toggle" />
+
+          <!-- slide out menu -->
+          <ul class="slidingMenu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
+
+        <!-- desktop navigation -->
+        <!-- top bar menu -->
+        <ul class="navigation">
+          <li><a href="index.html">home</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><h2>Bar-One</h2></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- ====header===== -->
+      <div class="wrapper title">
+        <h2>blog</h2>
+      </div>
     </header>
 
     <!-- ====main content===== -->
     <main id="mainContent">
-
-
-    <div class="blogBox">
-
+      <div class="blogBox">
         <aside class="asideBar">
-            <div class="asideBlogMission">
-                <div class="missionImg">
-                    <img src="./assets/sidebar-image.jpg" alt="Pouring a beer from a bar tap">
-                </div>    
-                <h3>Our mission</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id, suscipit.</p>
-                <a href="#">find out more.</a>
+          <div class="asideBlogMission">
+            <div class="missionImg">
+              <img
+                src="./assets/sidebar-image.jpg"
+                alt="Pouring a beer from a bar tap"
+              />
             </div>
-            <!-- blog navigation -->
-            <div class="asideBlogNavigation">
-                <h3>recent posts</h3>
-                <ul>
-                    <li><a href="#">Donec facillsis tortor</a></li>
-                    <li><a href="#">Augue lacinia at viver</a></li>
-                    <li><a href="#">Semper sed sapien me</a></li>
-                    <li><a href="#">Scelerisque nec phatetr</a></li>
-                </ul>
-            </div>
+            <h3>Our mission</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
+              suscipit.
+            </p>
+            <a href="#">find out more.</a>
+          </div>
+          <!-- blog navigation -->
+          <div class="asideBlogNavigation">
+            <h3>recent posts</h3>
+            <ul>
+              <li><a href="#">Donec facillsis tortor</a></li>
+              <li><a href="#">Augue lacinia at viver</a></li>
+              <li><a href="#">Semper sed sapien me</a></li>
+              <li><a href="#">Scelerisque nec phatetr</a></li>
+            </ul>
+          </div>
         </aside>
 
         <section aria-label="post" class="post">
-            <article>
+          <article>
+            <div class="postContainer">
+              <header>
+                <div class="blogImg">
+                  <img
+                    src="./assets/post-image.jpg"
+                    alt="Four plates of beautifully styled food on a bar"
+                  />
+                </div>
+              </header>
 
-                <div class="postContainer">
-                    <header>
-                        <div class="blogImg">
-                            <img src="./assets/post-image.jpg" alt="Four plates of beautifully styled food on a bar">
-                        </div>
-                    </header>
+              <!-- blog post -->
+              <div class="wrapper content">
+                <h1>new menu!</h1>
+                <h4 class="blogDate">Monday January 30, 2019 by Saron</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Delectus, ipsum nobis? Distinctio vel magni rerum natus
+                  accusamus itaque modi, dolorum maxime! Quis dicta libero fuga,
+                  inventore reprehenderit ducimus voluptas voluptatum?
+                </p>
+                <br />
 
-                    <!-- blog post -->
-                    <div class="wrapper content">             
-                        <h1>new menu!</h1>
-                        <h4 class="blogDate">Monday January 30, 2019 by Saron</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, ipsum nobis? Distinctio vel magni rerum natus accusamus itaque modi, dolorum maxime! Quis dicta libero fuga, inventore reprehenderit ducimus voluptas voluptatum?</p><br />
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                  ratione, impedit dignissimos, accusantium laborum nihil quia
+                  rerum vel, cum voluptatibus earum sed consequuntur quos aut
+                  magnam recusandae ab dolores modi!
+                </p>
+                <br />
 
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic ratione, impedit dignissimos, accusantium laborum nihil quia rerum vel, cum voluptatibus earum sed consequuntur quos aut magnam recusandae ab dolores modi!</p><br />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Aspernatur quam, excepturi alias nemo quos, fuga id inventore
+                  cum impedit obcaecati itaque temporibus mollitia, fugit sit
+                  sunt at commodi soluta voluptas?
+                </p>
+                <br />
 
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur quam, excepturi alias nemo quos, fuga id inventore cum impedit obcaecati itaque temporibus mollitia, fugit sit sunt at commodi soluta voluptas?</p><br />
-
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis praesentium officia facilis temporibus quibusdam totam fugiat ullam assumenda rem saepe.</p>
-                    </div>
-                </div> 
-
-            </article>    
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Omnis praesentium officia facilis temporibus quibusdam totam
+                  fugiat ullam assumenda rem saepe.
+                </p>
+              </div>
+            </div>
+          </article>
         </section>
-    </div><!-- Blog box end-->  
+      </div>
+      <!-- Blog box end-->
 
-        <!-- ====comments section===== -->
-        <section>
-            <div class="wrapper comments">
-                <h3>comments:</h3>
+      <!-- ====comments section===== -->
+      <section>
+        <div class="wrapper comments">
+          <h3>comments:</h3>
 
-                <!-- comment 1 -->
-                <div class="comment comment1">
-                    <div class="commentImg">
-                        <img src="./assets/comment-image-1.jpg" alt="Sulaire profile head shot">
-                    </div>
-                    <div class="commentTextContainer">
-                        <h4 class="blogDate">Tuesday October 9th, 2019 by Sulaire</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus molestias aliquid magni inventore nulla minima? Distinctio optio, vel ab quod explicabo facere et soluta quis, similique dignissimos maiores veniam?</p>
-                    </div>
-                </div><!-- comment 1 end -->
-                
-                <!-- comment 2 -->
-                <div class="comment comment2">
-                    <div class="commentImg">
-                        <img src="./assets/comment-image-2.jpg" alt="Renzo profile head shot">
-                    </div>
-                    <div class="commentTextContainer">
-                        <h4 class="blogDate">Tuesday October 10th, 2019 by Renzo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci accusamus molestias aliquid magni inventore nulla minima? Distinctio optio, vel ab quod explicabo facere et soluta quis, similique dignissimos maiores veniam?</p>
-                    </div>
-                </div><!-- comment 2 end -->
-            </div>    
-        </section>
-                
-        
-        <!-- ====comment form section===== -->
-        <section>
-            <div class="wrapper">
-                <!-- comments form submission -->
-                <form action="">
-                    <div class="formContainer blogForm">
-                        <div class="topRow blogTopRow">
-                            <div class="top blogTop">
-                                <label for="Name">Name</label>
-                                <input type="text" name="name" id="name">
-                            </div>
-                            <div class="top blogTop">
-                                <label for="email">Email address</label>
-                                <input type="email" name="email" id="email">
-                            </div>
-                        </div>
-                        <div class="blogTextArea">
-                            <label class="sr-only" for="comment">Comment</label>
-                            <textarea name="textarea" id="comment" placeholder="Comment"></textarea>
-                            <button type="submit">Post Comment</button>
-                        </div>    
-                    </div>
-                </form><!-- form end -->
-            </div>    
-        </section>
+          <!-- comment 1 -->
+          <div class="comment comment1">
+            <div class="commentImg">
+              <img
+                src="./assets/comment-image-1.jpg"
+                alt="Sulaire profile head shot"
+              />
+            </div>
+            <div class="commentTextContainer">
+              <h4 class="blogDate">Tuesday October 9th, 2019 by Sulaire</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci accusamus molestias aliquid magni inventore nulla
+                minima? Distinctio optio, vel ab quod explicabo facere et soluta
+                quis, similique dignissimos maiores veniam?
+              </p>
+            </div>
+          </div>
+          <!-- comment 1 end -->
 
-    </main><!-- end of main content-->
-    
+          <!-- comment 2 -->
+          <div class="comment comment2">
+            <div class="commentImg">
+              <img
+                src="./assets/comment-image-2.jpg"
+                alt="Renzo profile head shot"
+              />
+            </div>
+            <div class="commentTextContainer">
+              <h4 class="blogDate">Tuesday October 10th, 2019 by Renzo</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Adipisci accusamus molestias aliquid magni inventore nulla
+                minima? Distinctio optio, vel ab quod explicabo facere et soluta
+                quis, similique dignissimos maiores veniam?
+              </p>
+            </div>
+          </div>
+          <!-- comment 2 end -->
+        </div>
+      </section>
+
+      <!-- ====comment form section===== -->
+      <section>
+        <div class="wrapper">
+          <!-- comments form submission -->
+          <form action="">
+            <div class="formContainer blogForm">
+              <div class="topRow blogTopRow">
+                <div class="top blogTop">
+                  <label for="Name">Name</label>
+                  <input type="text" name="name" id="name" />
+                </div>
+                <div class="top blogTop">
+                  <label for="email">Email address</label>
+                  <input type="email" name="email" id="email" />
+                </div>
+              </div>
+              <div class="blogTextArea">
+                <label class="sr-only" for="comment">Comment</label>
+                <textarea
+                  name="textarea"
+                  id="comment"
+                  placeholder="Comment"
+                ></textarea>
+                <button type="submit">Post Comment</button>
+              </div>
+            </div>
+          </form>
+          <!-- form end -->
+        </div>
+      </section>
+    </main>
+    <!-- end of main content-->
+
     <!-- ====footer===== -->
     <footer>
-
-        <!-- copyright area -->
-        <div class="copyright">
-            <p>Copyright &copy; 2023 Juno College</p>
-        </div>
+      <!-- copyright area -->
+      <div class="copyright">
+        <p>
+          Created by
+          <span>
+            <a href="https://deanlane.ca/">Dean Lane </a>
+          </span>
+          Copyright
+          <span> &copy; </span> All rights reserved
+        </p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
