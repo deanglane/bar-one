@@ -4,11 +4,11 @@ html {
 
 // paragraph styling
 body {
-    font-family: 'Chathura', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     color: $offWhite;
-    font-size: 1.95rem; // 39px
-    line-height: 1.5rem; // 30px
-    letter-spacing: 0.095rem; // 1.9px
+    font-size: 1.2rem; // 32px
+    line-height: 1.7rem; // 30px
+    letter-spacing: 1.35px
 }
 
 h2, h3 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4.16rem; //83.2px
+    font-size: 3rem; //83.2px
     font-weight: 700;
     line-height: 2rem;
     letter-spacing: 2.6px;
@@ -34,7 +34,7 @@ h2 {
 
 
 h3 {
-    font-size: 3.4rem; //68px
+    font-size: 2rem; //68px
     font-weight: 700;
     line-height: 2.9rem; //58px
     letter-spacing: 0.11rem; // 2.2px
@@ -43,7 +43,7 @@ h3 {
 
 // anchor elements
 a {
-    font-size: 1.9rem; // 38px
+    font-size: 1.3rem; // 38px
     font-weight: 700;
     line-height: 1.45rem; // 29px
     letter-spacing: 0.095rem; // 1.9px
