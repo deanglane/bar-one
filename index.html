@@ -1,206 +1,295 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700;800&family=Tulpen+One&display=swap"rel="stylesheet">
-    <script src="https://kit.fontawesome.com/33b85127f5.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chathura:wght@400;700;800&family=Tulpen+One&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/33b85127f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Bar One</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- skip link -->
     <a href="#mainContent" class="skipLink">Skip to main content.</a>
 
     <!-- ====header===== -->
     <header class="indexHeader">
+      <!-- ====navigation===== -->
+      <nav class="wrapper">
+        <!-- mobile version navigation -->
+        <div class="navMenu">
+          <h2 class="h2Logo">Bar-One</h2>
+          <label class="test" for="toggle">
+            <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
+          </label>
+          <input type="checkbox" name="toggle" id="toggle" />
 
-        <!-- ====navigation===== -->
-        <nav class="wrapper">
-        
-            <!-- mobile version navigation -->
-            <div class="navMenu">
-                <h2 class="h2Logo">Bar-One</h2>
-                <label class="test" for="toggle">
-                    <i aria-label="menu" class="fa-sharp fa-solid fa-bars"></i>
-                </label>
-                <input type="checkbox" name="toggle" id="toggle">
-        
-                <!-- slide out menu -->
-                <ul class="slidingMenu">
-                    <li><a href="index.html">home</a></li>
-                    <li><a href="menu.html">menu</a></li>
-                    <li><a href="blog.html">blog</a></li>
-                    <li><a href="contact.html">contact</a></li>
-                </ul>
-            </div>
-        
-            <!-- desktop navigation -->
-            <!-- top bar menu -->
-            <ul class="navigation">
-                <li><a href="index.html">home</a></li>
-                <li><a href="menu.html">menu</a></li>
-                <li><h2>Bar-One</h2></li>
-                <li><a href="blog.html">blog</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-        </nav>
-        
-        <!-- logo  -->
-        <div class="logoContainer">
-            <h1>Bar-One</h1>
-            <h2>Place to be</h2>
+          <!-- slide out menu -->
+          <ul class="slidingMenu">
+            <li><a href="index.html">home</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
         </div>
 
-        <!-- floating image -->
-        <div class="floatingImage">
-            <img src="./assets/header-box.jpg" alt="black and white photo of wine glasses hanging">
-        </div>
+        <!-- desktop navigation -->
+        <!-- top bar menu -->
+        <ul class="navigation">
+          <li><a href="index.html">home</a></li>
+          <li><a href="menu.html">menu</a></li>
+          <li><h2>Bar-One</h2></li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
 
+      <!-- logo  -->
+      <div class="logoContainer">
+        <h1>Bar-One</h1>
+        <h2>Place to be</h2>
+      </div>
+
+      <!-- floating image -->
+      <div class="floatingImage">
+        <img
+          src="./assets/header-box.jpg"
+          alt="black and white photo of wine glasses hanging"
+        />
+      </div>
     </header>
-    
+
     <!-- ====main content===== -->
     <main id="mainContent">
-        
-        <!-- ====information section===== -->
-        <section aria-label="information">
-            <div class="wrapper information">
+      <!-- ====information section===== -->
+      <section aria-label="information">
+        <div class="wrapper information">
+          <!-- information areas -->
+          <ul>
+            <!-- new space -->
+            <li>
+              <h3 class="newSpace">New space</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores autem dolores eligendi nemo, officiis pariatur
+                consectetur iure atque ea. Officiis odio obcaecati quis
+                provident, quaerat tenetur animi.
+              </p>
+            </li>
 
-                
-                <!-- information areas -->
-                <ul>
+            <!-- community -->
+            <li>
+              <h3 class="community">Community</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores autem dolores eligendi nemo, officiis pariatur
+                consectetur iure atque ea. Officiis odio obcaecati quis
+                provident, quaerat tenetur animi.
+              </p>
+            </li>
 
-                    <!-- new space -->
-                    <li>
-                        <h3 class="newSpace">New space</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem dolores eligendi nemo, officiis pariatur consectetur iure atque ea. Officiis odio obcaecati quis provident, quaerat tenetur animi.</p>
-                    </li>
+            <!-- blog -->
+            <li>
+              <h3 class="blogImg">Blog</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores autem dolores eligendi nemo, officiis pariatur
+                consectetur iure atque ea. Officiis odio obcaecati quis
+                provident, quaerat tenetur animi.
+              </p>
+            </li>
 
-                    <!-- community -->
-                    <li>
-                        <h3 class="community">Community</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem dolores eligendi nemo, officiis pariatur consectetur iure atque ea. Officiis odio obcaecati quis provident, quaerat tenetur animi.</p>
-                    </li>
+            <!-- get in touch -->
+            <li>
+              <h3 class="getInTouch">Get in Touch</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Asperiores autem dolores eligendi nemo, officiis pariatur
+                consectetur iure atque ea. Officiis odio obcaecati quis
+                provident, quaerat tenetur animi.
+              </p>
+            </li>
+          </ul>
+        </div>
+        <!-- wrapper end -->
+      </section>
 
-                    <!-- blog -->
-                    <li>
-                        <h3 class="blogImg">Blog</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem dolores eligendi nemo, officiis pariatur consectetur iure atque ea. Officiis odio obcaecati quis provident, quaerat tenetur animi.</p>
-                    </li>
-                    
-                    <!-- get in touch -->
-                    <li>
-                        <h3 class="getInTouch">Get in Touch</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem dolores eligendi nemo, officiis pariatur consectetur iure atque ea. Officiis odio obcaecati quis provident, quaerat tenetur animi.</p>
-                    </li>
-                </ul>
-            </div> <!-- wrapper end -->
-        </section>
-    
-        <!-- ====blog section===== -->
-        <section aria-label="blog" class="blog">
-            <div class="wrapper">
-                
-                <div class="row">
-                    <div class="imageContainer">
-                        <img class="image image1" src="./assets/left-image.jpg" alt="dark themed bar with orange ambient lights">
-                    </div>
-                    <div class="textContainer">
-                        <h2>Plan ahead</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque facilis neque molestias magnivelquidem unde officia deserunt eligendi natus illo et libero numquam dolore labore vitaelaborum delectus eos excepturi.</p>
-                        <a class="aButton" href="#" aria-label="read more about planning ahead">read more</a>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="textContainer">
-                        <h2>New locations</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima cumque facilis neque molestias magnivelquidem unde officia deserunt eligendi natus illo et libero numquam dolore labore vitaelaborum delectus eos excepturi.</p>
-                        <a class="aButton" href="#" aria-label="read more about our new locations">read more</a>
-                    </div>
-                    <div class="imageContainer">
-                        <img class="image image2" src="./assets/right-image.jpg" alt="a semi empty drinking bar with empty bar stools">
-                    </div>
-                </div>
+      <!-- ====blog section===== -->
+      <section aria-label="blog" class="blog">
+        <div class="wrapper">
+          <div class="row">
+            <div class="imageContainer">
+              <img
+                class="image image1"
+                src="./assets/left-image.jpg"
+                alt="dark themed bar with orange ambient lights"
+              />
             </div>
-        </section>
-        
-        <!-- ====get in touch section===== -->
-        <section aria-label="get in touch" id="getInTouch">
-            <div class="wrapper getInTouchTextBox">
-                <h3>Want to host a party?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus facere quia error hic eaque! Sed repellendus ducimus accusamus error placeat aperiam tempora nihil explicabo earum fugit, dolores ab quis! Explicabo, quia facilis iure dolor commodi amet dolores consectetur commodi amet dolores. </p>
-                <a class="aButton" href="" aria-label="read more about hosting a party with us">find out more</a>
+            <div class="textContainer">
+              <h2>Plan ahead</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                cumque facilis neque molestias magnivelquidem unde officia
+                deserunt eligendi natus illo et libero numquam dolore labore
+                vitaelaborum delectus eos excepturi.
+              </p>
+              <a
+                class="aButton"
+                href="#"
+                aria-label="read more about planning ahead"
+                >read more</a
+              >
             </div>
-        </section>    
+          </div>
 
-
-        <!-- ====image banner section===== -->
-        <section>
-            <!-- image-->
-            <div class="imageBreak">
-                <img src="./assets/banner-image.jpg" alt="a pint of beer on a bar counter">
+          <div class="row">
+            <div class="textContainer">
+              <h2>New locations</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                cumque facilis neque molestias magnivelquidem unde officia
+                deserunt eligendi natus illo et libero numquam dolore labore
+                vitaelaborum delectus eos excepturi.
+              </p>
+              <a
+                class="aButton"
+                href="#"
+                aria-label="read more about our new locations"
+                >read more</a
+              >
             </div>
-        </section>
-
-        <!-- ====events section===== -->
-        <section aria-labelledby="events">
-            <div class="wrapper events">
-
-                <!-- image container -->
-                <div class="eventImageBox">
-                    <img src="./assets/small-box-image.jpg" alt="women laughing with drinks">
-                </div>
-
-                <!-- event information  -->
-                <div class="eventTextBox">
-                    <h3>events</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem omnis facere suscipit fugiat excepturi magnam maxime. Mollitia repellat, dolore ducimus tempore excepturi omnis doloribus libero, deserunt adipisci voluptas molestias tempora in corporis itaque, nulla aut atque cumque nostrum! Obcaecati commodi tempora eveniet beatae a delectus provident velit numquam.</p>
-
-                    <!-- button for more informtion -->
-                    <a class="aButton" href="#" aria-label="read more about our events">find out more</a>
-                </div>
-            </div><!-- wrapper end -->
-            
-        </section>
-
-        <!-- ====Instagram Section===== -->
-        <section aria-label="instagram" class="instagram">
-            <div class="wrapper">
-
-                <!-- gallery container -->
-                <ul class="galleryContainer">
-
-                    <!-- left image -->
-                    <li class="gram gram1">
-                        <a href="#"><img src="./assets/gallery-image-1.jpg" alt="drinking bar setup"></a>
-                    </li>
-
-                    <!-- middle image -->
-                    <li class="gram gram2">
-                        <a href="#"><img src="./assets/gallery-image-2.jpg" alt="plate of Burger, fries and dipping sauce"></a>
-                    </li>
-
-                    <!-- right image -->
-                    <li class="gram gram3">
-                        <a href="#"><img src="./assets/gallery-image-3.jpg" alt="cocktail in a tall glass placed on the bar"></a>
-                    </li>
-                </ul>
+            <div class="imageContainer">
+              <img
+                class="image image2"
+                src="./assets/right-image.jpg"
+                alt="a semi empty drinking bar with empty bar stools"
+              />
             </div>
-        </section>
-    </main><!-- end of main content -->
+          </div>
+        </div>
+      </section>
+
+      <!-- ====get in touch section===== -->
+      <section aria-label="get in touch" id="getInTouch">
+        <div class="wrapper getInTouchTextBox">
+          <h3>Want to host a party?</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Voluptatibus facere quia error hic eaque! Sed repellendus ducimus
+            accusamus error placeat aperiam tempora nihil explicabo earum fugit,
+            dolores ab quis! Explicabo, quia facilis iure dolor commodi amet
+            dolores consectetur commodi amet dolores.
+          </p>
+          <a
+            class="aButton"
+            href=""
+            aria-label="read more about hosting a party with us"
+            >find out more</a
+          >
+        </div>
+      </section>
+
+      <!-- ====image banner section===== -->
+      <section>
+        <!-- image-->
+        <div class="imageBreak">
+          <img
+            src="./assets/banner-image.jpg"
+            alt="a pint of beer on a bar counter"
+          />
+        </div>
+      </section>
+
+      <!-- ====events section===== -->
+      <section aria-labelledby="events">
+        <div class="wrapper events">
+          <!-- image container -->
+          <div class="eventImageBox">
+            <img
+              src="./assets/small-box-image.jpg"
+              alt="women laughing with drinks"
+            />
+          </div>
+
+          <!-- event information  -->
+          <div class="eventTextBox">
+            <h3>events</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              voluptatem omnis facere suscipit fugiat excepturi magnam maxime.
+              Mollitia repellat, dolore ducimus tempore excepturi omnis
+              doloribus libero, deserunt adipisci voluptas molestias tempora in
+              corporis itaque, nulla aut atque cumque nostrum! Obcaecati commodi
+              tempora eveniet beatae a delectus provident velit numquam.
+            </p>
+
+            <!-- button for more informtion -->
+            <a class="aButton" href="#" aria-label="read more about our events"
+              >find out more</a
+            >
+          </div>
+        </div>
+        <!-- wrapper end -->
+      </section>
+
+      <!-- ====Instagram Section===== -->
+      <section aria-label="instagram" class="instagram">
+        <div class="wrapper">
+          <!-- gallery container -->
+          <ul class="galleryContainer">
+            <!-- left image -->
+            <li class="gram gram1">
+              <a href="#"
+                ><img
+                  src="./assets/gallery-image-1.jpg"
+                  alt="drinking bar setup"
+              /></a>
+            </li>
+
+            <!-- middle image -->
+            <li class="gram gram2">
+              <a href="#"
+                ><img
+                  src="./assets/gallery-image-2.jpg"
+                  alt="plate of Burger, fries and dipping sauce"
+              /></a>
+            </li>
+
+            <!-- right image -->
+            <li class="gram gram3">
+              <a href="#"
+                ><img
+                  src="./assets/gallery-image-3.jpg"
+                  alt="cocktail in a tall glass placed on the bar"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- end of main content -->
 
     <!-- ====footer===== -->
     <footer>
-
-        <!-- copyright area -->
-        <p>Copyright &copy; 2023 Juno College</p>
+      <!-- copyright area -->
+      <p>
+        Created by
+        <span>
+          <a href="https://deanlane.ca/">Dean Lane </a>
+        </span>
+        Copyright
+        <span> &copy; </span> All rights reserved
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
